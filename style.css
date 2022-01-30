@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #a6f3c9;
+}
+
+body .container {
+    width: 500px;
+    height: auto;
+    background-color: white;
+    border-radius: 3px;
+    padding: 30px;
+    margin-top: 225px;
+    margin-bottom: 250px;
+}
+
+body .container .signup-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+body .container .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+body .container .row #select {
+    height: 35px;
+    width: 16em;
+    padding: 0 0.5em;
+    border: 2px solid grey;
+}
+
+body .container .row #select2 {
+    height: 35px;
+    width: 16em;
+    padding: 0 0.5em;
+    border: 2px solid grey;
+}
+
+body .container .row #select3 {
+    height: 35px;
+    width: 16em;
+    padding: 0 0.5em;
+    border: 2px solid grey;
+}
+
+body .container .row #selectclass {
+    height: 35px;
+    width: 16em;
+    padding: 0 0.5em;
+    border: 2px solid grey;
+}
+
+body .container .row input {
+    height: 35px;
+    width: 16em;
+    padding: 0 0.5em;
+    border: 2px solid grey;
+}
+
+body .container .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+body .container .button-container :first-child {
+    margin-top: 15px;
+    background-color: #69c592;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    border-radius: 5px;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    font-size: 17px;
+}
+
+body .container .button-container :first-child:hover {
+    background-color: #528b6c;
+}
+
+body .container .button-container input[type="file"] {
+    position: fixed;
+    right: 100%;
+    bottom: 100%;
+}
+
+body .container .button-container .custom-file-upload {
+    margin-top: 15px;
+    background-color: #69c592;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    border-radius: 5px;
+    -webkit-transition: 300ms;
+    transition: 300ms;
+    font-size: 17px;
+}
+
+body .container .button-container .custom-file-upload:hover {
+    background-color: #528b6c;
+}
