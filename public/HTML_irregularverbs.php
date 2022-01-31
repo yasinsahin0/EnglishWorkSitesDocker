@@ -43,12 +43,8 @@ session_start();
         </ul>
     </li>
 </ul>
-<h1>İRREGULAR VERBS</h1>
-<div id="container">
-    <form action="PHP_randomirregularverb.php" method="post" enctype="multipart/form-data">
-        <input type="submit" name="gonder" value="Yeni">
-    </form>
-</div>
+
+
 <div id="container">
 
     <table id="table">
@@ -63,6 +59,11 @@ session_start();
         <tr>
             <td id="tanım">VERB 3</td>
             <td><?php echo $_SESSION['ir_verb3'];?></td>
+            <td>
+                <form action="PHP_randomirregularverb.php" method="post" enctype="multipart/form-data">
+                    <input type="submit" name="gonder" value="Yeni">
+                </form>
+            </td>
         </tr>
         <tr>
             <td id="tanım">TRANSLATE</td>
@@ -71,10 +72,6 @@ session_start();
         <tr>
             <td id="tanım">TYPE</td>
             <td><?php echo $_SESSION['ir_type'];?></td>
-        </tr>
-        <tr>
-            <td id="tanım">EXP</td>
-            <td><?php echo $_SESSION['ir_exp'];?></td>
         </tr>
     </table>
 </div>
@@ -85,19 +82,34 @@ session_start();
             <td><?php echo $_SESSION['ir_ex1'];?></td>
         </tr>
         <tr>
-            <td id="tanım">EXAMPLE 1</td>
+            <td id="tanım">EXAMPLE 1 TRANSLATE</td>
             <td><?php echo $_SESSION['ir_ex1t'];?></td>
         </tr>
+    </table>
+</div>
+<div id="container">
+    <table id="table2">
         <tr>
             <td id="tanım">EXAMPLE 2</td>
             <td><?php echo $_SESSION['ir_ex2'];?></td>
         </tr>
         <tr>
-            <td id="tanım">EXAMPLE 2</td>
+            <td id="tanım">EXAMPLE 2 TRANSLATE</td>
             <td><?php echo $_SESSION['ir_ex2t'];?></td>
         </tr>
     </table>
 </div>
-
+<div id="container">
+    <table id="table2">
+        <tr>
+            <td id="tanım">EXAMPLE 3</td>
+            <td><?php echo $_SESSION['ir_ex3'];?></td>
+        </tr>
+        <tr>
+            <td id="tanım">EXAMPLE 3 TRANSLATE</td>
+            <td><?php echo $_SESSION['ir_ex3t'];?></td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>

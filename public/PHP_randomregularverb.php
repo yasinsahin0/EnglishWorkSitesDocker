@@ -30,6 +30,7 @@ $_SESSION['re_ex1'] = $result->ex1;
 $_SESSION['re_ex1t'] = $result->ex1translate;
 $_SESSION['re_ex2'] = $result->ex2;
 $_SESSION['re_ex2t'] = $result->ex2translate;
-$_SESSION['re_exp'] = $result->explanation;
+$_SESSION['re_ex3'] = $result->ex3;
+$_SESSION['re_ex3t'] = $result->ex3translate;
 
 echo'<meta http-equiv="refresh" content="0;URL=HTML_regularverbs.php">';

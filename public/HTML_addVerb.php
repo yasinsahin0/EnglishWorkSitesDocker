@@ -43,7 +43,7 @@ session_start();
         </ul>
     </li>
 </ul>
-<h1>ADD VERBS</h1>
+
 
 <div id="container">
     <table id="table3">
@@ -51,12 +51,8 @@ session_start();
             <tr>
                 <td id="tanım">Fiil Kontrol</td>
                 <td id="ortala"><input type="text" name="verb"></td>
-                <td><input type="submit" name="gonder" value="Kontrol"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td id="ortala"><?php echo $_SESSION['controlverb']?></td>
-                <td></td>
+                <td id="ortala2"><input type="submit" name="gonder" value="Kontrol"></td>
+                <td id="ortala3"><?php echo $_SESSION['controlverb']?></td>
             </tr>
         </form>
     </table>
@@ -84,14 +80,19 @@ session_start();
         </tr>
         <tr>
             <td id="tanım4">TYPE </td>
-            <td><input type="text" name="verbtype" placeholder="regular or irregular"></td>
+            <td>
+                <select name="verbtype">
+                    <option value="regular" name="regular">Regular</option>
+                    <option value="irregular" name="irregular">İrregular</option>
+                </select>
+            </td>
         </tr>
         <tr>
             <td id="tanım4">EXAMPLE 1</td>
             <td><input type="text" name="ex1" placeholder="Örnek 1"></td>
         </tr>
         <tr>
-            <td id="tanım4">EXAMPLE 1</td>
+            <td id="tanım4">EXAMPLE 1 TRANSLATE</td>
             <td><input type="text" name="ex1t" placeholder="Örnek 1 Çevirisi"></td>
         </tr>
         <tr>
@@ -99,13 +100,17 @@ session_start();
             <td><input type="text" name="ex2" placeholder="Örnek 2"></td>
         </tr>
         <tr>
-            <td id="tanım4">EXAMPLE 2</td>
+            <td id="tanım4">EXAMPLE 2 TRANSLATE</td>
             <td><input type="text" name="ex2t" placeholder="Örnek 2 Çevirisi"></td>
         </tr>
-        <tr>
-            <td id="tanım4">EXPLANATİON</td>
-            <td><input type="text" name="exp" placeholder="Açıklama"></td>
-        </tr>
+            <tr>
+                <td id="tanım4">EXAMPLE 3</td>
+                <td><input type="text" name="ex3" placeholder="Örnek 3"></td>
+            </tr>
+            <tr>
+                <td id="tanım4">EXAMPLE 3 TRANSLATE</td>
+                <td><input type="text" name="ex3t" placeholder="Örnek 3 Çevirisi"></td>
+            </tr>
         <tr>
             <td><?php echo $_SESSION['addverb']?></td>
             <td><input type="submit" name="gonder" value="Gonder"></td>

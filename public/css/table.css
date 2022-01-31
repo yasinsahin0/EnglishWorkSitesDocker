@@ -53,17 +53,25 @@ h1{
 
 }
 #ortala{
-    text-align: center;
+    text-align: left;
+}
+#ortala2{
+    text-align: left;
+    width: 25%;
+}
+#ortala3{
+    text-align: left;
+    width: 15%;
 }
 #tanım{
     color: #e74c3c;
-    padding: 6px 6px 6px 24px;
-    width: 170px;
+    padding: 6px 6px 20px 24px;
+    width: 250px;
 }
 #tanım4{
     color: #e74c3c;
     padding: 6px 6px 6px 24px;
-    width: 40%;
+    width: 30%;
 }
 #result{
     color: #e74c3c;

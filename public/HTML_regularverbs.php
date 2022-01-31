@@ -43,14 +43,8 @@ session_start();
         </ul>
     </li>
 </ul>
-<h1>REGULAR VERBS</h1>
-<div id="container">
 
-    <form action="PHP_randomregularverb.php" method="post" enctype="multipart/form-data">
-        <input type="submit" name="gonder" value="YENİ">
-    </form>
 
-</div>
 <div id="container">
 
     <table id="table">
@@ -65,6 +59,9 @@ session_start();
         <tr>
             <td id="tanım">VERB 3</td>
             <td><?php echo $_SESSION['re_verb3'];?></td>
+            <td><form action="PHP_randomregularverb.php" method="post" enctype="multipart/form-data">
+                    <input type="submit" name="gonder" value="YENİ">
+                </form></td>
         </tr>
         <tr>
             <td id="tanım">TRANSLATE</td>
@@ -75,10 +72,6 @@ session_start();
             <td><?php echo $_SESSION['re_type'];?></td>
         </tr>
 
-        <tr>
-            <td id="tanım">EXP</td>
-            <td><?php echo $_SESSION['re_exp'];?></td>
-        </tr>
     </table>
 </div>
 <div id="container">
@@ -91,6 +84,12 @@ session_start();
             <td id="tanım">EXAMPLE 1</td>
             <td><?php echo $_SESSION['re_ex1t'];?></td>
         </tr>
+
+    </table>
+</div>
+<div id="container">
+    <table id="table2">
+
         <tr>
             <td id="tanım">EXAMPLE 2</td>
             <td><?php echo $_SESSION['re_ex2'];?></td>
@@ -101,6 +100,18 @@ session_start();
         </tr>
     </table>
 </div>
+<div id="container">
+    <table id="table2">
 
+        <tr>
+            <td id="tanım">EXAMPLE 3</td>
+            <td><?php echo $_SESSION['re_ex3'];?></td>
+        </tr>
+        <tr>
+            <td id="tanım">EXAMPLE 3</td>
+            <td><?php echo $_SESSION['re_ex3t'];?></td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>
