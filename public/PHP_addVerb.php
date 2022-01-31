@@ -22,7 +22,8 @@ curl_setopt_array($curl, array(
                                 'ex1translate' => $_POST['ex1t'],
                                 'ex2' => $_POST['ex2'],
                                 'ex2translate' => $_POST['ex2t'],
-                                'explanation' => $_POST['exp']),
+                                'ex3' => $_POST['ex3'],
+                                'ex3translate' => $_POST['ex3t']),
 ));
 
 $response = curl_exec($curl);
