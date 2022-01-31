@@ -32,4 +32,4 @@ $_SESSION['re_ex2'] = $result->ex2;
 $_SESSION['re_ex2t'] = $result->ex2translate;
 $_SESSION['re_exp'] = $result->explanation;
 
-echo'<meta http-equiv="refresh" content="0;URL=htmlregularverbs.php">';
+echo'<meta http-equiv="refresh" content="0;URL=HTML_regularverbs.php">';

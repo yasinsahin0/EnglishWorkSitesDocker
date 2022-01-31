@@ -21,4 +21,4 @@ $response = curl_exec($curl);
 curl_close($curl);
 echo $response;
 $_SESSION['controlverb'] = $response;
-echo'<meta http-equiv="refresh" content="0;URL=htmladdVerb.php">';
+echo'<meta http-equiv="refresh" content="0;URL=HTML_addVerb.php">';

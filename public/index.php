@@ -2,36 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Eng Time Ana Sayfa</title>
     <link rel="stylesheet" href="css/menu.css">
 </head>
 <body>
-<h1>MENU</h1>
-<div id="container">
-    <a href="randomirregularverb.php" class="button">İRREGULAR VERBS</a>
-    <a href="randomregularverb.php" class="button">REGULAR VERBS</a>
-    <a href="#" class="button">NOUNS</a>
-    <a href="htmladdVerb.php" class="button">ADD VERB</a>
-</div>
-<div id="container">
-    <a href="#" class="button">Link Button</a>
-    <a href="#" class="button">Link Button</a>
-    <a href="#" class="button">Link Button</a>
-</div>
-<div id="container">
-    <a href="#" class="button">Link Button</a>
-    <a href="#" class="button">Link Button</a>
-    <a href="#" class="button">Link Button</a>
-</div>
-<div id="container">
-    <a href="#" class="button">Link Button</a>
-    <a href="#" class="button">Link Button</a>
-    <a href="#" class="button">Link Button</a>
-</div>
-<div id="container">
-    <a href="#" class="button">Link Button</a>
-    <a href="#" class="button">Link Button</a>
-    <a href="#" class="button">Link Button</a>
-</div>
+<ul class="menu cf">
+    <li><a href="index.php">Ana Sayfa</a></li>
+    <li>
+        <a href="">VERB</a>
+        <ul class="submenu">
+            <li><a href="PHP_randomregularverb.php">Regular verbs</a></li>
+            <li><a href="PHP_randomirregularverb.php">İrregular verbs</a></li>
+            <li><a href="HTML_addVerb.php">Add Verb</a></li>
+
+        </ul>
+    </li>
+
+    <li>
+        <a href="">Menu item</a>
+        <ul class="submenu">
+            <li><a href="">Submenu item</a></li>
+            <li><a href="">Submenu item</a></li>
+            <li><a href="">Submenu item</a></li>
+            <li><a href="">Submenu item</a></li>
+        </ul>
+    </li>
+
+    <li>
+        <a href="">Menu item</a>
+        <ul class="submenu">
+            <li><a href="">Submenu item</a></li>
+            <li><a href="">Submenu item</a></li>
+            <li><a href="">Submenu item</a></li>
+            <li><a href="">Submenu item</a></li>
+        </ul>
+    </li>
+</ul>
+
+
+
+
 </body>
 </html>

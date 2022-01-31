@@ -1,0 +1,72 @@
+h1{
+    text-align:center;
+    font-family:helvetica, sans-serif, arial;
+}
+#container{
+    display:flex;
+    justify-content:center;
+    padding:20px;
+    align-items:center;
+}
+#table{
+    width: 50%;
+    font: bold 1.25em "Lucida Console", Verdana, Arial, Helvetica,
+    sans-serif;
+    border: 5px solid #34495e;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 3px 3px 3px 6px;
+    background: #ffffff;
+
+}
+#table2{
+    width: 80%;
+    font: bold 1.25em "Lucida Console", Verdana, Arial, Helvetica,
+    sans-serif;
+    border: 5px solid #34495e;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 3px 3px 3px 6px;
+    background: #ffffff;
+
+}
+#table3{
+    width: 70%;
+    font: bold 1.25em "Lucida Console", Verdana, Arial, Helvetica,
+    sans-serif;
+    border: 5px solid #34495e;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 3px 3px 3px 6px;
+    background: #ffffff;
+
+}
+#table4{
+    width: 80%;
+    font: bold 1.25em "Lucida Console", Verdana, Arial, Helvetica,
+    sans-serif;
+    border: 5px solid #34495e;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 3px 3px 3px 6px;
+    background: #ffffff;
+
+}
+#ortala{
+    text-align: center;
+}
+#tanım{
+    color: #e74c3c;
+    padding: 6px 6px 6px 24px;
+    width: 170px;
+}
+#tanım4{
+    color: #e74c3c;
+    padding: 6px 6px 6px 24px;
+    width: 40%;
+}
+#result{
+    color: #e74c3c;
+    padding: 6px 6px 6px 24px;
+    width: 50%;
+}

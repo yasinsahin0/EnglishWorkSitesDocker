@@ -32,7 +32,7 @@ echo $response;
 
 if ($response == "ok"):
     $_SESSION['addverb'] = $response;
-    echo'<meta http-equiv="refresh" content="0;URL=htmladdVerb.php">';
+    echo'<meta http-equiv="refresh" content="0;URL=HTML_addVerb.php">';
 
 else:
     echo'<meta http-equiv="refresh" content="0;URL=404.html">';

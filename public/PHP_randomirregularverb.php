@@ -32,4 +32,4 @@ $_SESSION['ir_ex2'] = $result->ex2;
 $_SESSION['ir_ex2t'] = $result->ex2translate;
 $_SESSION['ir_exp'] = $result->explanation;
 
-echo'<meta http-equiv="refresh" content="0;URL=htmlirregularverbs.php">';
+echo'<meta http-equiv="refresh" content="0;URL=HTML_irregularverbs.php">';
