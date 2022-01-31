@@ -1,10 +1,11 @@
 <?php
 session_start();
 
+include 'server.php';
 $curl = curl_init();
-
+$urll = url();
 curl_setopt_array($curl, array(
-    CURLOPT_URL => 'http://127.0.0.1:5000/controlverb',
+    CURLOPT_URL => $urll . '/controlverb',
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => '',
     CURLOPT_MAXREDIRS => 10,
@@ -20,4 +21,4 @@ $response = curl_exec($curl);
 curl_close($curl);
 echo $response;
 $_SESSION['controlverb'] = $response;
-header("Location: /htmladdVerb.php");
+echo'<meta http-equiv="refresh" content="0;URL=htmladdVerb.php">';

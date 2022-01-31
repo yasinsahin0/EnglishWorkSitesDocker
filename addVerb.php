@@ -1,10 +1,11 @@
 <?php
 session_start();
 
+include 'server.php';
 $curl = curl_init();
-
+$urll = url();
 curl_setopt_array($curl, array(
-    CURLOPT_URL => 'http://127.0.0.1:5000/addVerb',
+    CURLOPT_URL => $urll.'/addVerb',
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_ENCODING => '',
     CURLOPT_MAXREDIRS => 10,
@@ -17,6 +18,10 @@ curl_setopt_array($curl, array(
                                 'verb3' => $_POST['verb3'],
                                 'translate' => $_POST['translate'],
                                 'verbtype' => $_POST['verbtype'],
+                                'ex1' => $_POST['ex1'],
+                                'ex1translate' => $_POST['ex1t'],
+                                'ex2' => $_POST['ex2'],
+                                'ex2translate' => $_POST['ex2t'],
                                 'explanation' => $_POST['exp']),
 ));
 
@@ -27,8 +32,8 @@ echo $response;
 
 if ($response == "ok"):
     $_SESSION['addverb'] = $response;
-    header("Location: /htmladdVerb.php");
+    echo'<meta http-equiv="refresh" content="0;URL=htmladdVerb.php">';
 
 else:
-    header("Location: /404.php");
+    echo'<meta http-equiv="refresh" content="0;URL=404.html">';
 endif;

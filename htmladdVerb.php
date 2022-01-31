@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <div class="container">
@@ -29,6 +29,9 @@ session_start();
     <div class="signup-header">
         Fiil Kaydet
     </div>
+    <div class="signup-header">
+        <?php echo $_SESSION['addverb']?>
+    </div>
     <form action="addVerb.php" method="post" enctype="multipart/form-data">
         <div class="row">
             <p>Verb 1 :</p>
@@ -49,6 +52,22 @@ session_start();
         <div class="row">
             <p>Verb Type (regular or irregular):</p>
             <input type="text" name="verbtype">
+        </div>
+        <div class="row">
+            <p>Example 1:</p>
+            <input type="text" name="ex1">
+        </div>
+        <div class="row">
+            <p>Example 1 translate:</p>
+            <input type="text" name="ex1t">
+        </div>
+        <div class="row">
+            <p>Example 2:</p>
+            <input type="text" name="ex2">
+        </div>
+        <div class="row">
+            <p>Example 2 translate:</p>
+            <input type="text" name="ex2t">
         </div>
         <div class="row">
             <p>Explanation :</p>

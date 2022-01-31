@@ -1,0 +1,52 @@
+h1{
+    text-align:center;
+    font-family:helvetica, sans-serif, arial;
+}
+#container{
+    display:flex;
+    justify-content:center;
+    padding:20px;
+    /*align-items:stretch; */
+    /*align-items:stretch; */
+    align-items:center;
+    /*align-items:flex-start; */
+    /*align-items:flex-end; */
+    /*align-items:baseline; */
+}
+#personel{
+    width: 40%;
+    font: bold 1.25em "Trebuchet MS", Verdana, Arial, Helvetica,
+    sans-serif;
+    border: 20px solid #528b6c;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 6px 6px 6px 12px;
+    background: #C1DAD7;
+    border-collapse: collapse;
+}
+
+#personel th{
+    color: #41AA7F;
+    padding: 6px 6px 6px 24px;
+
+}
+#tanım{
+    color: #c30f1a;
+    padding: 6px 6px 6px 24px;
+
+}
+
+#personel td{
+    padding: 6px 6px 6px 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+#personel tr{
+    color: #112233;
+    background: #fff;
+}
+#personel tr:hover{
+    background:#528b6c;
+    color:#fff;
+}
