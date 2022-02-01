@@ -29,12 +29,12 @@ curl_setopt_array($curl, array(
 $response = curl_exec($curl);
 
 curl_close($curl);
-echo $response;
+
 
 if ($response == "ok"):
     $_SESSION['addverb'] = $response;
-    echo'<meta http-equiv="refresh" content="0;URL=HTML_addVerb.php">';
+    echo'<meta http-equiv="refresh" content="0;URL=../append/verbAdd.php">';
 
 else:
-    echo'<meta http-equiv="refresh" content="0;URL=404.html">';
+    echo'<meta http-equiv="refresh" content="0;URL=../inform/404.html">';
 endif;

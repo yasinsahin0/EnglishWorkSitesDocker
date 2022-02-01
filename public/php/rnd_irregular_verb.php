@@ -33,4 +33,4 @@ $_SESSION['ir_ex2t'] = $result->ex2translate;
 $_SESSION['ir_ex3'] = $result->ex3;
 $_SESSION['ir_ex3t'] = $result->ex3translate;
 
-echo'<meta http-equiv="refresh" content="0;URL=HTML_irregularverbs.php">';
+echo'<meta http-equiv="refresh" content="0;URL=../verbirregular.php">';

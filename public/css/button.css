@@ -1,4 +1,4 @@
-input[type=button], input[type=submit], input[type=reset] {
+input[type=button],  input[type=reset] {
     background-color: #34495e;
     border: none;
     border-bottom-left-radius: 10px;
@@ -26,12 +26,27 @@ input[type=button], input[type=submit], input[type=reset] {
     cursor: pointer;
     font-family: "Times New Roman", Times, serif;
 }
+input[type=submit]{
+    width: 80px;
+    height: 80px;
 
+}
+#refresh{
+    background-image:url("../image/refresh.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
+#add{
+    background-image:url("../image/add.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
 input[type=submit]:hover{
     background-color: #e74c3c;
 }
 input[type=text]{
     width: 100%;
+    position: center;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -39,4 +54,9 @@ input[type=text]{
     border-radius: 4px;
     box-sizing: border-box;
 
+}
+#combo{
+    font: bold 1em "Lucida Console", Verdana, Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 45px;
 }

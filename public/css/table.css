@@ -1,3 +1,77 @@
+#table{
+    width: 60%;
+    font: bold 1.25em "Lucida Console", Verdana, Arial, Helvetica, sans-serif;
+    border: 5px solid #34495e;
+    /*
+    text-transform: uppercase;
+    */
+    text-align: left;
+    padding: 3px 3px 3px 6px;
+
+}
+#table2{
+    width: 80%;
+    font: bold 1.25em "Lucida Console", Verdana, Arial, Helvetica,
+    sans-serif;
+    border: 5px solid #34495e;
+    text-align: left;
+    padding: 3px 3px 3px 6px;
+}
+#table3{
+    width: 70%;
+    font: bold 1.25em "Lucida Console", Verdana, Arial, Helvetica,
+    sans-serif;
+    border: 5px solid #34495e;
+    text-align: left;
+    padding: 3px 3px 3px 6px;
+}
+#table4{
+    width: 80%;
+    font: bold 1.25em "Lucida Console", Verdana, Arial, Helvetica, sans-serif;
+    border: 5px solid #34495e;
+    text-align: left;
+    padding: 3px 3px 3px 6px;
+}
+#tanım{
+    color: #e74c3c;
+    text-align: right;
+    width: 20%;
+}
+#tanım2{
+    color: #e74c3c;
+    width: 40%;
+}
+#tanım3{
+    color: #e74c3c;
+    text-align: center;
+    width: 15%;
+}
+#tanım4{
+    color: #e74c3c;
+    width: 15%;
+    text-align: center;
+    text-transform: uppercase;
+}
+#tanım5{
+    width: 60%;
+    text-align: left;
+}
+#tanım6{
+    color: #e74c3c;
+    width: 20%;
+    text-align: center;
+    text-transform: uppercase;
+}
+#tanım7{
+    width: 75%;
+    text-align: left;
+}
+#tanım8{
+    color: #e74c3c;
+    text-align: right;
+    width: 25%;
+}
+
 h1{
     text-align:center;
     font-family:helvetica, sans-serif, arial;
@@ -8,71 +82,32 @@ h1{
     padding:20px;
     align-items:center;
 }
-#table{
-    width: 50%;
-    font: bold 1.25em "Lucida Console", Verdana, Arial, Helvetica,
-    sans-serif;
-    border: 5px solid #34495e;
-    text-transform: uppercase;
-    text-align: left;
-    padding: 3px 3px 3px 6px;
-    background: #ffffff;
+/*
+td{
+    border: 1px solid black;
+}
+*/
+
+#yan{
+    width: 100px;
 
 }
-#table2{
-    width: 80%;
-    font: bold 1.25em "Lucida Console", Verdana, Arial, Helvetica,
-    sans-serif;
-    border: 5px solid #34495e;
-    text-transform: uppercase;
-    text-align: left;
-    padding: 3px 3px 3px 6px;
-    background: #ffffff;
-
+#yan2{
+    width: 100px;
 }
-#table3{
-    width: 70%;
-    font: bold 1.25em "Lucida Console", Verdana, Arial, Helvetica,
-    sans-serif;
-    border: 5px solid #34495e;
-    text-transform: uppercase;
-    text-align: left;
-    padding: 3px 3px 3px 6px;
-    background: #ffffff;
 
-}
-#table4{
-    width: 80%;
-    font: bold 1.25em "Lucida Console", Verdana, Arial, Helvetica,
-    sans-serif;
-    border: 5px solid #34495e;
-    text-transform: uppercase;
-    text-align: left;
-    padding: 3px 3px 3px 6px;
-    background: #ffffff;
-
-}
 #ortala{
     text-align: left;
 }
 #ortala2{
     text-align: left;
-    width: 25%;
+    width: 100px;
 }
 #ortala3{
-    text-align: left;
-    width: 15%;
+    text-align: center;
+    width: 100px;
 }
-#tanım{
-    color: #e74c3c;
-    padding: 6px 6px 20px 24px;
-    width: 250px;
-}
-#tanım4{
-    color: #e74c3c;
-    padding: 6px 6px 6px 24px;
-    width: 30%;
-}
+
 #result{
     color: #e74c3c;
     padding: 6px 6px 6px 24px;

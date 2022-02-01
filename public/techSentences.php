@@ -1,9 +1,15 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Eng Time Ana Sayfa</title>
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/image.css">
 </head>
 <body>
 <ul class="menu cf">
@@ -42,7 +48,28 @@
 </ul>
 
 
-
+<div id="container">
+    <table id="table2">
+        <tr>
+            <td id="tanım">SENTENCES </td>
+            <td><?php echo $_SESSION['re_verb3'];?></td>
+            <td rowspan="2" id="yan">
+                <a href="php/rnd_tech_sentences.php">
+                    <img src="image/refresh.png">
+                </a>
+            </td>
+            <td rowspan="2" id="yan">
+                <a href="append/techSentencesAdd.php">
+                    <img src="image/add.png">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td id="tanım">SENTENCES TRANSLATE</td>
+            <td><?php echo $_SESSION['re_translate'];?></td>
+        </tr>
+    </table>
+</div>
 
 </body>
 </html>

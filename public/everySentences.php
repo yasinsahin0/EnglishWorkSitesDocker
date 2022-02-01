@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,9 +43,6 @@
         <a href="">Game</a>
     </li>
 </ul>
-
-
-
 
 </body>
 </html>
