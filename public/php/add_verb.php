@@ -36,5 +36,5 @@ if ($response == "ok"):
     echo'<meta http-equiv="refresh" content="0;URL=../append/verbAdd.php">';
 
 else:
-    echo'<meta http-equiv="refresh" content="0;URL=../inform/404.html">';
+    echo'<meta http-equiv="refresh" content="0;URL=../inform/404.php">';
 endif;
