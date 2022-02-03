@@ -73,7 +73,7 @@ session_start();
     <table id="table4">
         <form action="../php/add_verb.php" method="post" enctype="multipart/form-data">
         <tr>
-            <td id="tanım">Verb 1 :</td>
+            <td id="tanım">Verb :</td>
             <td id="tanım9"><input type="text" name="verb1" placeholder="1. Hali"></td>
             <td id="tanım9"><input type="text" name="verb2" placeholder="2. Hali"></td>
             <td id="tanım9"><input type="text" name="verb3" placeholder="3. Hali"></td>

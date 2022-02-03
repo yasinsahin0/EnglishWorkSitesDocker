@@ -1,0 +1,32 @@
+#ortametin{
+    height: 100%;
+    width: 70%;
+    margin: auto;
+}
+h1{
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 35px;
+    font-style: oblique;
+}
+h2{
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    font-style: oblique;
+}
+h3{
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-style: oblique;
+}
+#acıklama{
+    width: 60%;
+}
+#ornek{
+    color: #e74c3c;
+}
+#dikkat{
+    background-color: aqua;
+}
