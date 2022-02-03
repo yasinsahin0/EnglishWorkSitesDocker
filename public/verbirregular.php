@@ -52,8 +52,10 @@ session_start();
 
     <table id="table">
         <tr>
-            <td id="tanım">Verb 1 :</td>
-            <td id="tanım5"><?php echo $_SESSION['ir_verb1'];?></td>
+            <td id="tanım">Verb :</td>
+            <td id="tanım9"><?php echo $_SESSION['ir_verb1'];?></td>
+            <td id="tanım9"><?php echo $_SESSION['ir_verb2'];?></td>
+            <td id="tanım9"><?php echo $_SESSION['ir_verb3'];?></td>
             <td rowspan="5" id="tanım6">
                 <form action="php/rnd_irregular_verb.php" method="post" enctype="multipart/form-data">
                     <input type="submit" name="gonder" id="refresh" value="">
@@ -61,21 +63,12 @@ session_start();
             </td>
         </tr>
         <tr>
-            <td id="tanım">Verb 2 :</td>
-            <td id="tanım5"><?php echo $_SESSION['ir_verb2'];?></td>
-        </tr>
-        <tr>
-            <td id="tanım">Verb 3 :</td>
-            <td id="tanım5"><?php echo $_SESSION['ir_verb3'];?></td>
-
-        </tr>
-        <tr>
             <td id="tanım">Translate :</td>
-            <td id="tanım5"><?php echo $_SESSION['ir_translate'];?></td>
+            <td id="tanım5" colspan="3"><?php echo $_SESSION['ir_translate'];?></td>
         </tr>
         <tr>
             <td id="tanım">Type :</td>
-            <td id="tanım5"><?php echo $_SESSION['ir_type'];?></td>
+            <td id="tanım5" colspan="3"><?php echo $_SESSION['ir_type'];?></td>
         </tr>
     </table>
 </div>
