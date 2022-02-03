@@ -50,7 +50,11 @@ input[type=submit]:hover{
     background-position: center;
     background-size: 100% 100%;
 }
-
+#send{
+    background-image:url("../image/send.png");
+    background-position: center;
+    background-size: 100% 100%;
+}
 input[type=text]{
     width: 100%;
     position: center;

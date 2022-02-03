@@ -49,53 +49,63 @@ session_start();
 
 
 <div id="container">
+
     <table id="table">
         <tr>
-
-            <td id="tanım8">Verb  : </td>
-            <td id="tanım7"><?php echo $_SESSION['game_reg_verb'];?></td>
-            <td id="tanım"></td>
-            <td rowspan="5" id="tanım6">
-                <form action="php/game_rnd_regular_verb.php" method="post" enctype="multipart/form-data">
-                    <input type="submit" name="gonder" id="refresh" value="">
-                </form>
+            <td rowspan="6" id="tanım6">
+                <?php
+                if($_SESSION['game_reg_cevap'] =="Doğru"):
+                    echo "<img src='image/onay.png'>";
+                else:
+                    echo "<img src='image/hata.png'>";
+                endif;
+                ?>
+            </td>
+            <td id="tanım10"><?php echo $_SESSION['game_reg_verb'];?></td>
+            <form action="php/game_control_regular_verb.php" method="post" enctype="multipart/form-data">
+            <td rowspan="6" id="tanım11">
+                <input type="submit" name="gonder" id="send" value="">
             </td>
         </tr>
         <tr></tr>
-        <form action="php/game_control_regular_verb.php" method="post" enctype="multipart/form-data">
+
         <tr>
-            <td id="tanım8">Seçenek 1 :</td>
+
             <td id="tanım7">
                 <input type="radio" id="gameradio" name="secenek" value="<?php echo $_SESSION['game_reg_1'] ?>">
                 <label for="huey"><?php echo $_SESSION['game_reg_1'] ?></label>
             </td>
+
         </tr>
         <tr>
-            <td id="tanım8">Seçenek 2 :</td>
+
             <td id="tanım7">
                 <input type="radio" id="gameradio" name="secenek" value="<?php echo $_SESSION['game_reg_2'] ?>">
                 <label for="huey"><?php echo $_SESSION['game_reg_2'] ?></label>
             </td>
         </tr>
         <tr>
-            <td id="tanım8">Seçenek 3 :</td>
+
             <td id="tanım7">
                 <input type="radio" id="gameradio" name="secenek" value="<?php echo $_SESSION['game_reg_3'] ?>">
                 <label for="huey"><?php echo $_SESSION['game_reg_3'] ?></label>
             </td>
         </tr>
         <tr>
-            <td id="tanım8">Seçenek 4 :</td>
+
             <td id="tanım7">
                 <input type="radio" id="gameradio" name="secenek" value="<?php echo $_SESSION['game_reg_4'] ?>">
                 <label for="huey"><?php echo $_SESSION['game_reg_4'] ?></label>
             </td>
         </tr>
-            <?php echo $_SESSION['game_reg_cevap'] ?>
     </table>
-    <input type="submit" name="gonder" id="add" value="">
+
     </form>
 </div>
-
+<div id="container">
+    <form action="php/game_rnd_regular_verb.php" method="post" enctype="multipart/form-data">
+        <input type="submit" name="gonder" id="refresh" value="">
+    </form>
+</div>
 </body>
 </html>
