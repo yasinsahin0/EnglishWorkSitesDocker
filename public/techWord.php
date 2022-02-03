@@ -82,17 +82,6 @@ session_start();
         </tr>
     </table>
 </div>
-<div id="container">
-    <table id="table2">
-        <tr>
-            <td id="tanım8">Example :</td>
-            <td id="tanım7"><?php echo $_SESSION['tech_ex2'];?></td>
-        </tr>
-        <tr>
-            <td id="tanım8">Example Translate :</td>
-            <td id="tanım7"><?php echo $_SESSION['tech_ex2t'];?></td>
-        </tr>
-    </table>
-</div>
+
 </body>
 </html>

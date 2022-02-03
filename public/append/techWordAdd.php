@@ -53,22 +53,34 @@ session_start();
                 <td id="tanım">Word Control :</td>
                 <td id="tanım2"><input type="text" name="word"></td>
                 <td id="tanım3"><input type="submit" name="gonder" id="refresh" value=""></td>
-                <td id="tanım4"><?php echo $_SESSION['controlword']?></td>
+                <td id="tanım4">
+                    <?php
+                    if($_SESSION['controlword'] =="ok"):
+                        echo "<img src='../image/onay.png'>";
+                    else:
+                        echo "<img src='../image/hata.png'>";
+                    endif;
+                    ?>
+                </td>
             </tr>
         </form>
     </table>
 </div>
 <form action="../php/add_tech_word.php" method="post" enctype="multipart/form-data">
 <div id="container">
-    <table id="table">
+    <table id="table4">
         <tr>
             <td id="tanım">Word :</td>
             <td id="tanım5"><input type="text" name="word" placeholder="Kelimeyi yazınız..."></td>
+
             <td rowspan="2" id="tanım6">
-                    <input type="submit" name="gonder" id="add" value="">
-            </td>
-            <td rowspan="2" id="tanım6">
-                <?php echo $_SESSION['addword']?>
+                <?php
+                if($_SESSION['addword'] =="ok"):
+                    echo "<img src='../image/onay.png'>";
+                else:
+                    echo "<img src='../image/hata.png'>";
+                endif;
+                ?>
             </td>
         </tr>
         <tr>
@@ -76,13 +88,12 @@ session_start();
             <td id="tanım5"><input type="text" name="translate" placeholder="Çevirisini yazınız..."></td>
 
         </tr>
-    </table>
-</div>
-<div id="container">
-    <table id="table2">
         <tr>
             <td id="tanım8">Example :</td>
             <td id="tanım7"><input type="text" name="ex1" placeholder="Örnek yazınız..."></td>
+            <td rowspan="2" id="tanım6">
+                <input type="submit" name="gonder" id="add" value="">
+            </td>
         </tr>
         <tr>
             <td id="tanım8">Example Translate :</td>
@@ -90,18 +101,8 @@ session_start();
         </tr>
     </table>
 </div>
-<div id="container">
-    <table id="table2">
-        <tr>
-            <td id="tanım8">Example :</td>
-            <td id="tanım7"><input type="text" name="ex2" placeholder="Örnek yazınız..."></td>
-        </tr>
-        <tr>
-            <td id="tanım8">Example Translate :</td>
-            <td id="tanım7"><input type="text" name="ex2t" placeholder="Örnek çevirisini yazınız..."></td>
-        </tr>
-    </table>
-</div>
+
+
 </form>
 </body>
 </html>

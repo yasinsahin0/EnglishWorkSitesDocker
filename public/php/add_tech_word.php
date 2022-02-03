@@ -16,9 +16,7 @@ curl_setopt_array($curl, array(
     CURLOPT_POSTFIELDS => array('word' => $_POST['word'],
                                 'translate' => $_POST['translate'],
                                 'ex1' => $_POST['ex1'],
-                                'ex1t' => $_POST['ex1t'],
-                                'ex2' => $_POST['ex2'],
-                                'ex2t' => $_POST['ex2t']),
+                                'ex1t' => $_POST['ex1t']),
 ));
 
 $response = curl_exec($curl);

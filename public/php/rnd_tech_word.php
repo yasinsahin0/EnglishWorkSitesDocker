@@ -23,8 +23,7 @@ $_SESSION['tech_word'] = $result->word;
 $_SESSION['tech_translate'] = $result->translate;
 $_SESSION['tech_ex1'] = $result->ex1;
 $_SESSION['tech_ex1t'] = $result->ex1t;
-$_SESSION['tech_ex2'] = $result->ex2;
-$_SESSION['tech_ex2t'] = $result->ex2t;
+
 
 
 echo'<meta http-equiv="refresh" content="0;URL=../techWord.php">';
