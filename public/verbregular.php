@@ -51,30 +51,24 @@ session_start();
 <div id="container">
     <table id="table">
         <tr>
-            <td id="tanım">Verb 1 :</td>
-            <td id="tanım5"><?php echo $_SESSION['re_verb1'];?></td>
+            <td id="tanım">Verb :</td>
+            <td id="tanım9"><?php echo $_SESSION['re_verb1'];?></td>
+            <td id="tanım9"><?php echo $_SESSION['re_verb2'];?></td>
+            <td id="tanım9"><?php echo $_SESSION['re_verb3'];?></td>
             <td rowspan="5" id="tanım6">
                 <form action="php/rnd_regular_verb.php" method="post" enctype="multipart/form-data">
                     <input type="submit" name="gonder" id="refresh" value="">
                 </form>
             </td>
         </tr>
-        <tr>
-            <td id="tanım">Verb 2 :</td>
-            <td id="tanım5"><?php echo $_SESSION['re_verb2'];?></td>
-        </tr>
-        <tr>
-            <td id="tanım">Verb 3 :</td>
-            <td id="tanım5"><?php echo $_SESSION['re_verb3'];?></td>
 
-        </tr>
         <tr>
             <td id="tanım">Translate :</td>
-            <td id="tanım5"><?php echo $_SESSION['re_translate'];?></td>
+            <td id="tanım5" colspan="3"><?php echo $_SESSION['re_translate'];?></td>
         </tr>
         <tr>
             <td id="tanım">Type :</td>
-            <td id="tanım5"><?php echo $_SESSION['re_type'];?></td>
+            <td id="tanım5" colspan="3"><?php echo $_SESSION['re_type'];?></td>
         </tr>
 
     </table>
