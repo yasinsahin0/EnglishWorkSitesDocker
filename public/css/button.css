@@ -29,7 +29,16 @@ input[type=button],  input[type=reset] {
 input[type=submit]{
     width: 80px;
     height: 80px;
+    background-color: transparent;
+    border: none;
 
+}
+input[type=submit]:hover{
+    background-color: #e74c3c;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 #refresh{
     background-image:url("../image/refresh.png");
@@ -41,9 +50,7 @@ input[type=submit]{
     background-position: center;
     background-size: 100% 100%;
 }
-input[type=submit]:hover{
-    background-color: #e74c3c;
-}
+
 input[type=text]{
     width: 100%;
     position: center;
