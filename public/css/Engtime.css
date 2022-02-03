@@ -16,17 +16,35 @@ h2{
     font-style: oblique;
 }
 h3{
-    text-align: left;
+    text-align: center;
     font-family: "Times New Roman", Times, serif;
-    font-size: 20px;
+    font-size: 25px;
     font-style: oblique;
 }
 #acıklama{
+
+    text-align: center;
+}
+
+#dikkat{
+    color: #e74c3c;
+    text-align: center;
+    font-size: 25px;
+    font-style: unset;
+}
+red{
+    color: red;
+}
+table{
+    width: 50%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+tr{
+    border: 1px solid black;
     width: 60%;
 }
-#ornek{
-    color: #e74c3c;
-}
-#dikkat{
-    background-color: aqua;
+td{
+    border: 1px solid black;
 }

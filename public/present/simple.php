@@ -74,58 +74,14 @@
 <div id="ortametin">
     <h1>Present Simple Tense</h1>
     <h2>Geniş Zaman</h2>
-    <p id="acıklama">
-        ‘Simple Present Tense’ dediğimiz şey, Türkçede ‘Geniş Zaman’ anlamına geliyor. İngilizcedeki karşılığı da aslında tam olarak bu. ‘Basit Şimdiki Zaman’ gibi bir çevrimi olsa da hobilerden, alışkanlıklardan, genel doğrulardan bahsederken kullanılan, şu anı değil, genel olarak her zamanı kapsayan bir kullanımı var.
-    </p>
-    <h2>Present Simple kullanım yerleri</h2>
 
-    <h3> ◆ Genel Doğrulardan Bahsederken</h3>
-    <p id="acıklama">
-        Herkes tarafından doğru kabul edilen durumlar, tam olarak bu kategoriye giriyor diyebiliriz. Mesela, doğa kanunları ve bilimsel gerçekler.
-    </p>
-    <p id="ornek">The sun sets in the West. (Güneş batıdan batar.)</p>
-
-    <h3> ◆ Günlük Rutin Alışkanlıklarımızdan ve Hobilerimizden Bahsederken</h3>
-    <p id="acıklama">
-        Sevdiğimiz ya da hoşlanmadığımız şeyleri anlatırken, alışkanlıklarımızdan bahsederken veya gündelik yaşantımızda rutin olarak gerçekleştirdiğimiz işleri belirtirken de bu form kullanılır.   </p>
-    <p id="ornek">I play tennis. (Tenis oynarım.) – Hobi</p>
-    <p id="ornek">She hates broccoli. (O brokoliden nefret eder.) – Sevmediklerimiz</p>
-    <p id="ornek">He works in a bank. (O bir bankada çalışır.) – Rutin</p>
-    <p id="ornek">I drink coffee every morning. (Her sabah kahve içerim.) – Alışkanlık</p>
-
-    <h3> ◆ Uçak, Tren, Otobüs, Sinema vb. Saat Çizelgelerinde</h3>
-    <p id="acıklama">
-        Ulaşım araçlarının veya sinema, tiyatro gibi yerlerin saat çizelgelerinde de geniş zaman kullanılır.
-    </p>
-    <p id="ornek">The plane arrives at 10:30. (Uçak 10:30’da varacak)</p>
-    <p id="dikkat">Burada dikkat edilmesi gereken, geniş zamanın gelecek zaman anlamında kullanılmış olduğudur.</p>
-
-    <h3> ◆ Hikaye Anlatımlarında</h3>
-    <p id="acıklama">
-        Anlatıcı, bir hikayeden bahsederken cümleleri Present Simple formuna göre kurar.
-    </p>
-    <p id="ornek">The prince gets on his horse. (Prens atına biner.)</p>
-
-    <h3> ◆ Talimat Verirken</h3>
-    <p id="acıklama">
-        ‘Yap!’, ‘Karıştır!’ gibi talimatlarda ve emir cümlelerinde yine geniş zaman kullanılır.
-    </p>
-    <p id="ornek">You heat the oven to a temperature of 180 degree. (Fırını 180 dereceye kadar ısıtın.)</p>
-
-    <h2>Simple Present Tense Cümle Yapısı</h2>
-    <p id="acıklama">
-        Geniş zaman formunun cümle yapısı, diğer tenslere kıyasla çok daha basit bir yapıdadır.</br>
-        Genel olarak cümleler şu formüle göre oluşturuluyor;</br>
-        Subject + Verb + Object / Özne + Yüklem + Nesne</br>
-        Ancak olumlu, olumsuz ve soru cümlelerinin yapılarında küçük farklılıklar tabi ki var.</br>
-    </p>
     <h3>Olumlu Cümle</h3>
     <p id="acıklama">
-        Olumlu bir cümle kurarken aşağıdaki kurallara dikkat edilmelidir;</br>
-        I, You, We, They öznelerinde fiil hiçbir ek almaz.</br>
-        He, She, It yani 3.tekil öznelerinde fiile ‘-s’ takısı gelir.</br>
+        <b>I, You, We, They</b> öznelerinde fiil hiçbir ek almaz.</br></br>
+        <b>He, She, It</b> yani 3.tekil öznelerinde fiile ‘-s’ takısı gelir.</br>
     </p>
-    <table>
+    <p id="dikkat">Subject + Verb + Object / Özne + Yüklem + Nesne</p>
+    <table align="center">
         <tr>
             <td>ÖZNE / SUBJECT</td>
             <td>FİİL / VERB</td>
@@ -138,10 +94,71 @@
         </tr>
         <tr>
             <td>he</br>she</br>it</td>
-            <td>feeds</td>
+            <td>feed<red>s</red></td>
             <td>cats</td>
         </tr>
     </table>
+    <p id="acıklama">Normal fiiller sadece <b>-s</b> takısı alırlar.</p>
+    <p id="acıklama">Sonu <b>-y</b> harfi ile biten fiillerde -y harfi düşerek yerine <b>-ies</b> takısı gelir.</p>
+    <p id="acıklama">Sonu <b>-ch, -ss, -sh, -o</b> harfi ile biten fiillerde <b>-es</b> takısı gelir.</p>
+
+
+
+    <h3>Olumsuz Cümle</h3>
+    <p id="acıklama">
+        <b>I, You,We, They, He, She, It</b> öznelerinde fiil hiçbir ek almaz.</br></br>
+        <b>I, You,We, They</b> öznelerinden sonra <b>don’t</b> kelimesi eklenip ardından fiil gelir.</br></br>
+        <b>He, She, It</b> öznelerinden sonra <b>doesn’t</b> kelimesi eklenip ardından fiil gelir.</br></br>
+    </p>
+    <p id="dikkat">Subject + Do/Does + Verb + Object / Özne + Do/Does + Yüklem + Nesne</p>
+    <table align="center">
+        <tr>
+            <td>Özne / Subject</td>
+            <td>Yardımcı Fiil / Auxiliary Verbs</td>
+            <td>Fiil / Verb</td>
+            <td>Nesne / Object</td>
+        </tr>
+        <tr>
+            <td>I</br>you</br>we</br>they</td>
+            <td>don't (do not)</td>
+            <td>feed</td>
+            <td>cats</td>
+        </tr>
+        <tr>
+            <td>he</br>she</br>it</td>
+            <td>doesn't (does not)</td>
+            <td>feed</td>
+            <td>cats</td>
+        </tr>
+    </table>
+
+
+    <h3>Soru Cümlesi</h3>
+    <p id="acıklama">
+        <b>Hiçbir öznede fiil ek almaz.</b> </br></br>
+    </p>
+    <p id="dikkat">Do/Does + Subject + Verb + Object? / Do/Does + Özne + Yüklem + Nesne?</p>
+    <table align="center">
+        <tr>
+            <td>Yardımcı Fiil / Auxiliary Verbs</td>
+            <td>Özne / Subject</td>
+            <td>Fiil / Verb</td>
+            <td>Nesne / Object</td>
+        </tr>
+        <tr>
+            <td>Do</td>
+            <td>I</br>you</br>we</br>they</td>
+            <td>feed</td>
+            <td>cats ?</td>
+        </tr>
+        <tr>
+            <td>Does</td>
+            <td>he</br>she</br>it</td>
+            <td>feed</td>
+            <td>cats ?</td>
+        </tr>
+    </table>
+    </br></br></br>
 </div>
 </body>
 </html>
