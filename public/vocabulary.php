@@ -5,7 +5,7 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Technical Words</title>
+    <title>Vocabulary</title>
     <link rel="stylesheet" href="css/table.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/menu.css">
@@ -28,6 +28,7 @@ session_start();
         <ul class="submenu">
             <li><a href="adjectives.php">Adjectives</a></li>
             <li><a href="vocabulary.php">Vocabulary</a></li>
+
         </ul>
     </li>
     <li>
@@ -88,22 +89,22 @@ session_start();
 <div id="container">
     <table id="table">
         <tr>
-            <td id="tanım">Word :</td>
-            <td id="tanım5"><?php echo $_SESSION['tech_word'];?></td>
+            <td id="tanım">Vocabulary :</td>
+            <td id="tanım5"><?php echo $_SESSION['voca_word'];?></td>
             <td rowspan="2" id="tanım3">
-                <form action="php/rnd_tech_word.php" method="post" enctype="multipart/form-data">
+                <form action="php/rnd_vocabulary.php" method="post" enctype="multipart/form-data">
                     <input type="submit" name="gonder" id="refresh" value="">
                 </form>
             </td>
             <td rowspan="2" id="tanım4">
-                <a href="append/techWordAdd.php">
+                <a href="append/vocabularyAdd.php">
                     <img src="image/add.png">
                 </a>
             </td>
         </tr>
         <tr>
             <td id="tanım">Translate :</td>
-            <td id="tanım5"><?php echo $_SESSION['tech_translate'];?></td>
+            <td id="tanım5"><?php echo $_SESSION['voca_translate'];?></td>
 
         </tr>
     </table>
@@ -112,11 +113,11 @@ session_start();
     <table id="table2">
         <tr>
             <td id="tanım8">Example :</td>
-            <td id="tanım7"><?php echo $_SESSION['tech_ex1'];?></td>
+            <td id="tanım7"><?php echo $_SESSION['voca_ex1'];?></td>
         </tr>
         <tr>
             <td id="tanım8">Example Translate :</td>
-            <td id="tanım7"><?php echo $_SESSION['tech_ex1t'];?></td>
+            <td id="tanım7"><?php echo $_SESSION['voca_ex1t'];?></td>
         </tr>
     </table>
 </div>
