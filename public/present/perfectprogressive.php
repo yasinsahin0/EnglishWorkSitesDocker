@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <title>Present Perfect Progressive</title>
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/Engtime.css">
 </head>
 <body>
 <ul class="menu cf">
@@ -70,6 +71,103 @@
         <a href="">Game</a>
     </li>
 </ul>
+<div id="ortametin">
+    <h1>Present Perfect Continuous Tense</h1>
+    <h2>Geçmişte başlayan hala devam eden</h2>
 
+    <h3>Olumlu Cümle</h3>
+    <p id="acıklama">
+        Fiil <b>-ing</b> eki alır.</br>
+    </p>
+    <p id="dikkat">Özne + Yardımcı Fiil (have, has) + been + Fiil-ing + Nesne</p>
+    <table align="center">
+        <tr>
+            <td>Özne / Subject</td>
+            <td>Yardımcı fiil / Aux. Verb</td>
+            <td>!!</td>
+            <td>Fiil / Verb</td>
+            <td>Nesne / Object</td>
+        </tr>
+        <tr>
+            <td>I</br>you</br>we</br>they</td>
+            <td>have</td>
+            <td>been</td>
+            <td>learn<red>ing</red></td>
+            <td>now</td>
+        </tr>
+        <tr>
+            <td>he</br>she</br>it</td>
+            <td>has</td>
+            <td>been</td>
+            <td>sitt<red>ing</red></td>
+            <td></td>
+        </tr>
+
+    </table>
+
+
+    <h3>Olumsuz Cümle</h3>
+    <p id="acıklama">
+        Fiil <b>-ing</b> eki alır.</br>
+    </p>
+    <p id="dikkat">Özne + Yardımcı Fiil (have not, has not) + been + Fiil-ing + Nesne</p>
+    <table align="center">
+        <tr>
+            <td>Özne / Subject</td>
+            <td>Yardımcı fiil / Aux. Verb</td>
+            <td>!!</td>
+            <td>Fiil / Verb</td>
+            <td>Nesne / Object</td>
+        </tr>
+        <tr>
+            <td>I</br>you</br>we</br>they</td>
+            <td>have <red>not</red></td>
+            <td>been</td>
+            <td>learn<red>ing</red></td>
+            <td>now</td>
+        </tr>
+        <tr>
+            <td>he</br>she</br>it</td>
+            <td>has <red>not</red></td>
+            <td>been</td>
+            <td>sitt<red>ing</red></td>
+            <td></td>
+        </tr>
+    </table>
+
+
+
+    <h3>Soru Cümlesi</h3>
+    <p id="acıklama">
+        Fiil <b>-ing</b> eki alır.</br>
+    </p>
+    <p id="dikkat">Yardımcı Fiil (have not, has not) + Özne + been + Fiil-ing + Nesne</p>
+    <table align="center">
+        <tr>
+            <td>Özne / Subject</td>
+            <td>Yardımcı fiil / Aux. Verb</td>
+            <td>!!</td>
+            <td>Fiil / Verb</td>
+            <td>Nesne / Object</td>
+        </tr>
+        <tr>
+            <td>have</td>
+            <td>I</br>you</br>we</br>they</td>
+
+            <td>been</td>
+            <td>learn<red>ing</red></td>
+            <td>now</td>
+        </tr>
+        <tr>
+            <td>has</td>
+            <td>he</br>she</br>it</td>
+
+            <td>been</td>
+            <td>sitt<red>ing</red></td>
+            <td></td>
+        </tr>
+    </table>
+    </br></br></br>
+</div>
 </body>
 </html>
