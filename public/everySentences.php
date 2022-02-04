@@ -69,7 +69,7 @@ session_start();
     <li>
         <a>Game</a>
         <ul class="submenu">
-            <li><a href="php/game_rnd_regular_verb.php">Regular Verb</a></li>
+            <li><a href="php/rnd_game_regular.php">Regular Verb</a></li>
             <li><a href="#">İrRegular Verb</a></li>
             <li><a href="#">Every Day Word</a></li>
         </ul>

@@ -72,7 +72,7 @@ session_start();
     <li>
         <a>Game</a>
         <ul class="submenu">
-            <li><a href="php/game_rnd_regular_verb.php">Regular Verb</a></li>
+            <li><a href="php/rnd_game_regular.php">Regular Verb</a></li>
             <li><a href="#">İrRegular Verb</a></li>
             <li><a href="#">Every Day Word</a></li>
         </ul>
@@ -94,7 +94,7 @@ session_start();
                 ?>
             </td>
             <td id="tanım10"><?php echo $_SESSION['game_reg_verb'];?></td>
-            <form action="php/game_control_regular_verb.php" method="post" enctype="multipart/form-data">
+            <form action="php/control_game_regular.php" method="post" enctype="multipart/form-data">
             <td rowspan="6" id="tanım11">
                 <input type="submit" name="gonder" id="send" value="">
             </td>
@@ -135,7 +135,7 @@ session_start();
     </form>
 </div>
 <div id="container">
-    <form action="php/game_rnd_regular_verb.php" method="post" enctype="multipart/form-data">
+    <form action="php/rnd_game_regular.php" method="post" enctype="multipart/form-data">
         <input type="submit" name="gonder" id="refresh" value="">
     </form>
 </div>
