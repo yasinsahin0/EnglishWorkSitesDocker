@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <title>Present Progressive</title>
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/Engtime.css">
 </head>
 <body>
 <ul class="menu cf">
@@ -70,6 +71,109 @@
         <a href="">Game</a>
     </li>
 </ul>
+<div id="ortametin">
+    <h1>Present Progressive Tense</h1>
+    <h2>Şimdiki Zaman</h2>
 
+    <h3>Olumlu Cümle</h3>
+    <p id="acıklama">
+        Fiil <b>-ing</b> eki alır.</br>
+    </p>
+    <p id="dikkat">Özne + Yardımcı Fiil (am, is, are) + Fiil-ing + Nesne</p>
+    <table align="center">
+        <tr>
+            <td>Özne / Subject</td>
+            <td>Yardımcı fiil / Aux. Verb</td>
+            <td>Fiil / Verb</td>
+            <td>Nesne / Object</td>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>am</td>
+            <td>learn<red>ing</red></td>
+            <td>now</td>
+        </tr>
+        <tr>
+            <td>he</br>she</br>it</td>
+            <td>is</td>
+            <td>sitt<red>ing</red></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>you</br>we</br>they</td>
+            <td>are</td>
+            <td>rid<red>ing</red></td>
+            <td>bike</td>
+        </tr>
+    </table>
+
+
+    <h3>Olumsuz Cümle</h3>
+    <p id="acıklama">
+        Fiil <b>-ing</b> eki alır.</br>
+    </p>
+    <p id="dikkat">Özne + Yardımcı Fiil (am, is are) + not + Fiil-ing + Nesne</p>
+    <table align="center">
+        <tr>
+            <td>Özne / Subject</td>
+            <td>Yardımcı fiil / Aux. Verb</td>
+            <td>Fiil / Verb</td>
+            <td>Nesne / Object</td>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>am <red>not</red></td>
+            <td>learn<red>ing</red></td>
+            <td>now</td>
+        </tr>
+        <tr>
+            <td>he</br>she</br>it</td>
+            <td>is <red>not</red> (isn't)</td>
+            <td>sitt<red>ing</red></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>you</br>we</br>they</td>
+            <td>are <red>not</red> (aren't)</td>
+            <td>rid<red>ing</red></td>
+            <td>bike</td>
+        </tr>
+    </table>
+
+
+
+    <h3>Soru Cümlesi</h3>
+    <p id="acıklama">
+        Fiil <b>-ing</b> eki alır.</br>
+    </p>
+    <p id="dikkat">Yardımcı Fiil (am, is are) + Özne + Fiil-ing + Nesne</p>
+    <table align="center">
+        <tr>
+            <td>Özne / Subject</td>
+            <td>Yardımcı fiil / Aux. Verb</td>
+            <td>Fiil / Verb</td>
+            <td>Nesne / Object</td>
+        </tr>
+        <tr>
+            <td>am</td>
+            <td>I</td>
+            <td>learn<red>ing</red></td>
+            <td>now</td>
+        </tr>
+        <tr>
+            <td>is</td>
+            <td>he</br>she</br>it</td>
+            <td>sitt<red>ing</red></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>are</td>
+            <td>you</br>we</br>they</td>
+            <td>rid<red>ing</red></td>
+            <td>bike</td>
+        </tr>
+    </table>
+    </br></br></br>
+</div>
 </body>
 </html>
