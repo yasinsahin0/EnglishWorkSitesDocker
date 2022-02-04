@@ -1,9 +1,15 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Eng Time Ana Sayfa</title>
+    <title>Technical Words</title>
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/image.css">
 </head>
 <body>
 <ul class="menu cf">
@@ -80,8 +86,41 @@
     </li>
 </ul>
 
+<div id="container">
+    <table id="table">
+        <tr>
+            <td id="tanım">Adjectives :</td>
+            <td id="tanım5"><?php echo $_SESSION['adj_word'];?></td>
+            <td rowspan="2" id="tanım3">
+                <form action="php/rnd_adjectives.php" method="post" enctype="multipart/form-data">
+                    <input type="submit" name="gonder" id="refresh" value="">
+                </form>
+            </td>
+            <td rowspan="2" id="tanım4">
+                <a href="append/adjectivesAdd.php">
+                    <img src="image/add.png">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td id="tanım">Translate :</td>
+            <td id="tanım5"><?php echo $_SESSION['adj_translate'];?></td>
 
-
+        </tr>
+    </table>
+</div>
+<div id="container">
+    <table id="table2">
+        <tr>
+            <td id="tanım8">Example :</td>
+            <td id="tanım7"><?php echo $_SESSION['adj_ex1'];?></td>
+        </tr>
+        <tr>
+            <td id="tanım8">Example Translate :</td>
+            <td id="tanım7"><?php echo $_SESSION['adj_ex1t'];?></td>
+        </tr>
+    </table>
+</div>
 
 </body>
 </html>
