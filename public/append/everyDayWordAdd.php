@@ -80,14 +80,14 @@ session_start();
 </ul>
 <div id="container">
     <table id="table">
-        <form action="../php/control_word.php" method="post" enctype="multipart/form-data">
+        <form action="../php/control_everydayword.php" method="post" enctype="multipart/form-data">
             <tr>
                 <td id="tanım">Word Control :</td>
                 <td id="tanım2"><input type="text" name="word"></td>
                 <td id="tanım3"><input type="submit" name="gonder" id="refresh" value=""></td>
                 <td id="tanım4">
                     <?php
-                    if($_SESSION['controlword'] =="ok"):
+                    if($_SESSION['controleverydayword'] =="var"):
                         echo "<img src='../image/onay.png'>";
                     else:
                         echo "<img src='../image/hata.png'>";
@@ -98,7 +98,7 @@ session_start();
         </form>
     </table>
 </div>
-<form action="../php/add_tech_word.php" method="post" enctype="multipart/form-data">
+<form action="../php/add_everyday_word.php" method="post" enctype="multipart/form-data">
 <div id="container">
     <table id="table4">
         <tr>
@@ -107,7 +107,7 @@ session_start();
 
             <td rowspan="2" id="tanım6">
                 <?php
-                if($_SESSION['addword'] =="ok"):
+                if($_SESSION['addeverydayword'] =="ok"):
                     echo "<img src='../image/onay.png'>";
                 else:
                     echo "<img src='../image/hata.png'>";
