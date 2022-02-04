@@ -5,7 +5,7 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Eng Time Ana Sayfa</title>
+    <title>Adjectives Add</title>
     <link rel="stylesheet" href="../css/table.css">
     <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/menu.css">
@@ -28,7 +28,6 @@ session_start();
         <ul class="submenu">
             <li><a href="../adjectives.php">Adjectives</a></li>
             <li><a href="../vocabulary.php">Vocabulary</a></li>
-
         </ul>
     </li>
     <li>

@@ -28,7 +28,6 @@ session_start();
         <ul class="submenu">
             <li><a href="adjectives.php">Adjectives</a></li>
             <li><a href="vocabulary.php">Vocabulary</a></li>
-
         </ul>
     </li>
     <li>

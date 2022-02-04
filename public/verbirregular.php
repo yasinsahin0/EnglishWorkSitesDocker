@@ -23,7 +23,13 @@ session_start();
 
         </ul>
     </li>
-
+    <li>
+        <a>GENERAL</a>
+        <ul class="submenu">
+            <li><a href="adjectives.php">Adjectives</a></li>
+            <li><a href="vocabulary.php">Vocabulary</a></li>
+        </ul>
+    </li>
     <li>
         <a>Technical</a>
         <ul class="submenu">
