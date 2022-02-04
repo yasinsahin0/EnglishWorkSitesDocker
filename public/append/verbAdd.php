@@ -19,7 +19,7 @@ session_start();
         <ul class="submenu">
             <li><a href="../php/rnd_regular_verb.php">Regular verbs</a></li>
             <li><a href="../php/rnd_irregular_verb.php">İrregular verbs</a></li>
-            <li><a href="verbAdd.php">Add Verb</a></li>
+            <li><a href="../append/verbAdd.php">Add Verb</a></li>
 
         </ul>
     </li>
@@ -43,7 +43,39 @@ session_start();
         </ul>
     </li>
     <li>
-        <a href="">Game</a>
+        <a>Present</a>
+        <ul class="submenu">
+            <li><a href="../present/simple.php">Simple</a></li>
+            <li><a href="../present/progressive.php">Progressive</a></li>
+            <li><a href="../present/perfect.php">Perfect</a></li>
+            <li><a href="../present/perfectprogressive.php">Perfect Progressive</a></li>
+        </ul>
+    </li>
+    <li>
+        <a>Past</a>
+        <ul class="submenu">
+            <li><a href="../past/simple.php">Simple</a></li>
+            <li><a href="../past/progressive.php">Progressive</a></li>
+            <li><a href="../past/perfect.php">Perfect</a></li>
+            <li><a href="../past/perfectprogressive.php">Perfect Progressive</a></li>
+        </ul>
+    </li>
+    <li>
+        <a>Future</a>
+        <ul class="submenu">
+            <li><a href="../future/simple.php">Simple</a></li>
+            <li><a href="../future/progressive.php">Progressive</a></li>
+            <li><a href="../future/perfect.php">Perfect</a></li>
+            <li><a href="../future/perfectprogressive.php">Perfect Progressive</a></li>
+        </ul>
+    </li>
+    <li>
+        <a>Game</a>
+        <ul class="submenu">
+            <li><a href="../php/game_rnd_regular_verb.php">Regular Verb</a></li>
+            <li><a href="#">İrRegular Verb</a></li>
+            <li><a href="#">Every Day Word</a></li>
+        </ul>
     </li>
 </ul>
 
