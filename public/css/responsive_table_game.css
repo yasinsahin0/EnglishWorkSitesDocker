@@ -10,11 +10,17 @@ table {
     border-collapse: collapse;
     margin: 0;
     padding: 0;
-    width: 80%;
+    width: 50%;
     table-layout: fixed;
 
 }
 
+#sol{
+    text-align: left;
+}
+#sag{
+    text-align: right;
+}
 table caption {
     font-size: 1.5em;
     margin: .5em 0 .75em;
@@ -86,7 +92,12 @@ table th {
     table td:last-child {
         border-bottom: 0;
     }
-
+    #sol{
+        text-align: right;
+    }
+    #sag{
+        text-align: right;
+    }
 }
 @media screen and (max-width: 1000px) {
     table {

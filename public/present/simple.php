@@ -5,11 +5,12 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Every Day Word</title>
+    <title>Present Simple</title>
     <link rel="stylesheet" href="../css/table.css">
     <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/image.css">
+    <link rel="stylesheet" href="../css/Engtime.css">
     <script src="../css/script.js"></script>
 </head>
 <body>
@@ -122,6 +123,7 @@ session_start();
         <div id="nav-toggle-alt" onclick="toggle()">X</div>
     </nav>
 </header>
+
 <div id="ortametin">
     <h1>Present Simple Tense</h1>
     <h2>Geniş Zaman</h2>
