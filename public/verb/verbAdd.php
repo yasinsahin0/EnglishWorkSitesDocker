@@ -5,8 +5,9 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Every Day Word</title>
+    <title>Verb Add</title>
     <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/responsive_table.css">
     <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/image.css">
@@ -32,9 +33,9 @@ session_start();
                     <li>
                         <a href="#">Verb</a>
                         <ul class="sub-sub">
-                            <li><a href="../verb/rnd_regular_verb.php">Regular verbs</a></li>
-                            <li><a href="../verb/rnd_irregular_verb.php">İrregular verbs</a></li>
-                            <li><a href="../verb/verbAdd.php">Add verbs</a></li>
+                            <li><a href="rnd_regular_verb.php">Regular verbs</a></li>
+                            <li><a href="rnd_irregular_verb.php">İrregular verbs</a></li>
+                            <li><a href="verbAdd.php">Add verbs</a></li>
                         </ul>
                     </li>
                     <li>
@@ -122,8 +123,101 @@ session_start();
         <div id="nav-toggle-alt" onclick="toggle()">X</div>
     </nav>
 </header>
-<center><h1>404 Hata Sayfası</h1></center>
 
+
+<div id="container">
+    <table>
+        <form action="control_verb.php" method="post" enctype="multipart/form-data">
+        <caption>Verb Control</caption>
+        <thead>
+        <tr>
+            <th scope="col">Verb</th>
+            <th scope="col">Control</th>
+            <th scope="col">Status</th>
+        </tr>
+        </thead>
+            <tbody>
+            <tr>
+                <td data-label="Verb"><input type="text" name="verb"></td>
+                <td data-label="Control"><input type="submit" name="gonder" id="refresh" value=""></td>
+                <td data-label="Translate">
+                    <?php
+                    if($_SESSION['controlverb'] =="var"):
+                        echo "<img src='../image/onay.png'>";
+                    else:
+                        echo "<img src='../image/hata.png'>";
+                    endif;
+                    ?>
+                </td>
+            </tr>
+            </tbody>
+        </form>
+    </table>
+</div>
+
+<div id="container">
+    <table>
+        <form action="add_verb.php" method="post" enctype="multipart/form-data">
+            <caption>Verb Add</caption>
+            <thead>
+            <tr>
+                <th scope="col">Verb</th>
+                <th scope="col">Verb 2</th>
+                <th scope="col">Verb 3</th>
+                <th scope="col">Translate</th>
+                <th scope="col">Check</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-label="Verb"><input type="text" name="verb1" placeholder="1. Hali"></td>
+                <td data-label="Verb 2"><input type="text" name="verb2" placeholder="2. Hali"></td>
+                <td data-label="Verb 3"><input type="text" name="verb3" placeholder="3. Hali"></td>
+                <td data-label="Translate"><input type="text" name="translate" placeholder="Çevirisi"></td>
+                <td id="tanım5">
+                    <select name="verbtype" id="combo">
+                        <option value="regular" name="regular">Regular</option>
+                        <option value="irregular" name="irregular">İrregular</option>
+                    </select>
+                </td>
+            </tr>
+            <thead>
+            <tr>
+                <th scope="col" colspan="2">Example</th>
+                <th scope="col" colspan="3">Example Translate</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-label="Example" colspan="2"><input type="text" name="ex1" placeholder="Örnek 1"></td>
+                <td data-label="Example Translate" colspan="3"><input type="text" name="ex1t" placeholder="Örnek 1 Çevirisi"></td>
+            </tr>
+
+            <tr>
+                <td data-label="Example" colspan="2"><input type="text" name="ex2" placeholder="Örnek 2"></td>
+                <td data-label="Example Translate" colspan="3"><input type="text" name="ex2t" placeholder="Örnek 2 Çevirisi"></td>
+            </tr>
+
+            <tr>
+                <td data-label="Example" colspan="2"><input type="text" name="ex3" placeholder="Örnek 3"></td>
+                <td data-label="Example Translate" colspan="3"><input type="text" name="ex3t" placeholder="Örnek 3 Çevirisi"></td>
+            </tr>
+            <tr>
+                <td data-label="Status" colspan="2">
+                    <?php
+                        if($_SESSION['addverb'] =="ok"):
+                            echo "<img src='../image/onay.png'>";
+                        else:
+                            echo "<img src='../image/hata.png'>";
+                        endif;
+                    ?>
+                </td>
+                <td data-label="Check" colspan="3"><input type="submit" name="gonder" id="add" value=""></td>
+            </tr>
+            </tbody>
+        </form>
+    </table>
+</div>
 
 
 </body>

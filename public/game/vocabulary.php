@@ -110,21 +110,18 @@ session_start();
             <li class="dropdown">
                 <a href="#">GAME</a>
                 <ul>
-                    <li><a href="../game/rnd_game_nouns.php">Nouns</a></li>
-                    <li><a href="../game/rnd_game_regular.php">Regular Verb</a></li>
-                    <li><a href="../game/rnd_game_irregular.php">İrregular Verb</a></li>
-                    <li><a href="../game/rnd_game_adjectives.php">Adjectives</a></li>
-                    <li><a href="../game/rnd_game_vocabulary.php">Vocabulary</a></li>
-                    <li><a href="../game/rnd_game_tense.php">Tense</a></li>
+                    <li><a href="rnd_game_nouns.php">Nouns</a></li>
+                    <li><a href="rnd_game_regular.php">Regular Verb</a></li>
+                    <li><a href="rnd_game_irregular.php">İrregular Verb</a></li>
+                    <li><a href="rnd_game_adjectives.php">Adjectives</a></li>
+                    <li><a href="rnd_game_vocabulary.php">Vocabulary</a></li>
+                    <li><a href="rnd_game_tense.php">Tense</a></li>
                 </ul>
             </li>
         </ul>
         <div id="nav-toggle-alt" onclick="toggle()">X</div>
     </nav>
 </header>
-<center><h1>404 Hata Sayfası</h1></center>
-
-
 
 </body>
 </html>

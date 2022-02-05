@@ -110,21 +110,78 @@ session_start();
             <li class="dropdown">
                 <a href="#">GAME</a>
                 <ul>
-                    <li><a href="../game/rnd_game_nouns.php">Nouns</a></li>
-                    <li><a href="../game/rnd_game_regular.php">Regular Verb</a></li>
-                    <li><a href="../game/rnd_game_irregular.php">İrregular Verb</a></li>
-                    <li><a href="../game/rnd_game_adjectives.php">Adjectives</a></li>
-                    <li><a href="../game/rnd_game_vocabulary.php">Vocabulary</a></li>
-                    <li><a href="../game/rnd_game_tense.php">Tense</a></li>
+                    <li><a href="rnd_game_nouns.php">Nouns</a></li>
+                    <li><a href="rnd_game_regular.php">Regular Verb</a></li>
+                    <li><a href="rnd_game_irregular.php">İrregular Verb</a></li>
+                    <li><a href="rnd_game_adjectives.php">Adjectives</a></li>
+                    <li><a href="rnd_game_vocabulary.php">Vocabulary</a></li>
+                    <li><a href="rnd_game_tense.php">Tense</a></li>
                 </ul>
             </li>
         </ul>
         <div id="nav-toggle-alt" onclick="toggle()">X</div>
     </nav>
 </header>
-<center><h1>404 Hata Sayfası</h1></center>
 
 
+<div id="container">
 
+    <table id="table">
+        <tr>
+            <td rowspan="6" id="tanım6">
+                <?php
+                if($_SESSION['game_reg_cevap'] =="Doğru"):
+                    echo "<img src='../image/onay.png'>";
+                else:
+                    echo "<img src='../image/hata.png'>";
+                endif;
+                ?>
+            </td>
+            <td id="tanım10"><?php echo $_SESSION['game_reg_verb'];?></td>
+            <form action="control_game_regular.php" method="post" enctype="multipart/form-data">
+            <td rowspan="6" id="tanım11">
+                <input type="submit" name="gonder" id="send" value="">
+            </td>
+        </tr>
+        <tr></tr>
+
+        <tr>
+
+            <td id="tanım7">
+                <input type="radio" id="gameradio" name="secenek" value="<?php echo $_SESSION['game_reg_1'] ?>">
+                <label for="huey"><?php echo $_SESSION['game_reg_1'] ?></label>
+            </td>
+
+        </tr>
+        <tr>
+
+            <td id="tanım7">
+                <input type="radio" id="gameradio" name="secenek" value="<?php echo $_SESSION['game_reg_2'] ?>">
+                <label for="huey"><?php echo $_SESSION['game_reg_2'] ?></label>
+            </td>
+        </tr>
+        <tr>
+
+            <td id="tanım7">
+                <input type="radio" id="gameradio" name="secenek" value="<?php echo $_SESSION['game_reg_3'] ?>">
+                <label for="huey"><?php echo $_SESSION['game_reg_3'] ?></label>
+            </td>
+        </tr>
+        <tr>
+
+            <td id="tanım7">
+                <input type="radio" id="gameradio" name="secenek" value="<?php echo $_SESSION['game_reg_4'] ?>">
+                <label for="huey"><?php echo $_SESSION['game_reg_4'] ?></label>
+            </td>
+        </tr>
+    </table>
+
+    </form>
+</div>
+<div id="container">
+    <form action="rnd_game_regular.php" method="post" enctype="multipart/form-data">
+        <input type="submit" name="gonder" id="refresh" value="">
+    </form>
+</div>
 </body>
 </html>

@@ -60,8 +60,8 @@ session_start();
                     <li>
                         <a href="#">Technology Technical </a>
                         <ul class="sub-sub">
-                            <li><a href="../tech-Technical/rnd_tech_word.php">Words</a></li>
-                            <li><a href="../tech-Technical/rnd_tech_paragraph.php">Paragraph</a></li>
+                            <li><a href="rnd_tech_word.php">Words</a></li>
+                            <li><a href="rnd_tech_paragraph.php">Paragraph</a></li>
                         </ul>
                     </li>
                     <li>
@@ -122,9 +122,42 @@ session_start();
         <div id="nav-toggle-alt" onclick="toggle()">X</div>
     </nav>
 </header>
-<center><h1>404 Hata Sayfası</h1></center>
 
+<div id="container">
+    <table id="table">
+        <tr>
+            <td id="tanım">Word :</td>
+            <td id="tanım5"><?php echo $_SESSION['tech_word'];?></td>
+            <td rowspan="2" id="tanım3">
+                <form action="rnd_tech_word.php" method="post" enctype="multipart/form-data">
+                    <input type="submit" name="gonder" id="refresh" value="">
+                </form>
+            </td>
+            <td rowspan="2" id="tanım4">
+                <a href="techWordAdd.php">
+                    <img src="../image/add.png">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td id="tanım">Translate :</td>
+            <td id="tanım5"><?php echo $_SESSION['tech_translate'];?></td>
 
+        </tr>
+    </table>
+</div>
+<div id="container">
+    <table id="table2">
+        <tr>
+            <td id="tanım8">Example :</td>
+            <td id="tanım7"><?php echo $_SESSION['tech_ex1'];?></td>
+        </tr>
+        <tr>
+            <td id="tanım8">Example Translate :</td>
+            <td id="tanım7"><?php echo $_SESSION['tech_ex1t'];?></td>
+        </tr>
+    </table>
+</div>
 
 </body>
 </html>

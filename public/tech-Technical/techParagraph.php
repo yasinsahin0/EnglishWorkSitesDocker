@@ -60,8 +60,8 @@ session_start();
                     <li>
                         <a href="#">Technology Technical </a>
                         <ul class="sub-sub">
-                            <li><a href="../tech-Technical/rnd_tech_word.php">Words</a></li>
-                            <li><a href="../tech-Technical/rnd_tech_paragraph.php">Paragraph</a></li>
+                            <li><a href="rnd_tech_word.php">Words</a></li>
+                            <li><a href="rnd_tech_paragraph.php">Paragraph</a></li>
                         </ul>
                     </li>
                     <li>
@@ -122,9 +122,6 @@ session_start();
         <div id="nav-toggle-alt" onclick="toggle()">X</div>
     </nav>
 </header>
-<center><h1>404 Hata Sayfası</h1></center>
-
-
 
 </body>
 </html>

@@ -5,7 +5,7 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Every Day Word</title>
+    <title>Adjectives Add</title>
     <link rel="stylesheet" href="../css/table.css">
     <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/menu.css">
@@ -40,8 +40,8 @@ session_start();
                     <li>
                         <a href="#">Adjectives</a>
                         <ul class="sub-sub">
-                            <li><a href="../adjectives/adjectives.php">Adjectives</a></li>
-                            <li><a href="../adjectives/adjectivesAdd.php">Add Adjectives</a></li>
+                            <li><a href="adjectives.php">Adjectives</a></li>
+                            <li><a href="adjectivesAdd.php">Add Adjectives</a></li>
                         </ul>
                     </li>
                     <li>
@@ -122,9 +122,63 @@ session_start();
         <div id="nav-toggle-alt" onclick="toggle()">X</div>
     </nav>
 </header>
-<center><h1>404 Hata Sayfası</h1></center>
+<div id="container">
+    <table id="table">
+        <form action="control_adjectives.php" method="post" enctype="multipart/form-data">
+            <tr>
+                <td id="tanım">Adjectives Control :</td>
+                <td id="tanım2"><input type="text" name="adjectives"></td>
+                <td id="tanım3"><input type="submit" name="gonder" id="refresh" value=""></td>
+                <td id="tanım4">
+                    <?php
+                    if($_SESSION['controladjectives'] =="var"):
+                        echo "<img src='../image/onay.png'>";
+                    else:
+                        echo "<img src='../image/hata.png'>";
+                    endif;
+                    ?>
+                </td>
+            </tr>
+        </form>
+    </table>
+</div>
+<form action="add_adjectives.php" method="post" enctype="multipart/form-data">
+<div id="container">
+    <table id="table4">
+        <tr>
+            <td id="tanım">Adjectives :</td>
+            <td id="tanım5"><input type="text" name="adjectives" placeholder="Kelimeyi yazınız..."></td>
+
+            <td rowspan="2" id="tanım6">
+                <?php
+                if($_SESSION['addAdjectives'] =="ok"):
+                    echo "<img src='../image/onay.png'>";
+                else:
+                    echo "<img src='../image/hata.png'>";
+                endif;
+                ?>
+            </td>
+        </tr>
+        <tr>
+            <td id="tanım">Translate :</td>
+            <td id="tanım5"><input type="text" name="translate" placeholder="Çevirisini yazınız..."></td>
+
+        </tr>
+        <tr>
+            <td id="tanım8">Example :</td>
+            <td id="tanım7"><input type="text" name="ex1" placeholder="Örnek yazınız..."></td>
+            <td rowspan="2" id="tanım6">
+                <input type="submit" name="gonder" id="add" value="">
+            </td>
+        </tr>
+        <tr>
+            <td id="tanım8">Example Translate :</td>
+            <td id="tanım7"><input type="text" name="ex1t" placeholder="Örnek çevirisini yazınız..."></td>
+        </tr>
+    </table>
+</div>
 
 
-
+</form>
 </body>
 </html>

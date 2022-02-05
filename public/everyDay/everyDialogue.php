@@ -67,9 +67,9 @@ session_start();
                     <li>
                         <a href="#">Every Day</a>
                         <ul class="sub-sub">
-                            <li><a href="../everyDay/rnd_everyday_word.php">Words</a></li>
-                            <li><a href="../everyDay/rnd_everyday_dialog.php">Dialogue</a></li>
-                            <li><a href="../everyDay/rnd_everyday_paragraph.php">Paragraph</a></li>
+                            <li><a href="rnd_everyday_word.php">Words</a></li>
+                            <li><a href="rnd_everyday_dialog.php">Dialogue</a></li>
+                            <li><a href="rnd_everyday_paragraph.php">Paragraph</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -122,9 +122,5 @@ session_start();
         <div id="nav-toggle-alt" onclick="toggle()">X</div>
     </nav>
 </header>
-<center><h1>404 Hata Sayfası</h1></center>
-
-
-
 </body>
 </html>

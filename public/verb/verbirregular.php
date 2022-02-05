@@ -5,8 +5,8 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Every Day Word</title>
-    <link rel="stylesheet" href="../css/table.css">
+    <title>Adjectives</title>
+    <link rel="stylesheet" href="../css/responsive_table.css">
     <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/image.css">
@@ -32,9 +32,9 @@ session_start();
                     <li>
                         <a href="#">Verb</a>
                         <ul class="sub-sub">
-                            <li><a href="../verb/rnd_regular_verb.php">Regular verbs</a></li>
-                            <li><a href="../verb/rnd_irregular_verb.php">İrregular verbs</a></li>
-                            <li><a href="../verb/verbAdd.php">Add verbs</a></li>
+                            <li><a href="rnd_regular_verb.php">Regular verbs</a></li>
+                            <li><a href="rnd_irregular_verb.php">İrregular verbs</a></li>
+                            <li><a href="verbAdd.php">Add verbs</a></li>
                         </ul>
                     </li>
                     <li>
@@ -122,9 +122,63 @@ session_start();
         <div id="nav-toggle-alt" onclick="toggle()">X</div>
     </nav>
 </header>
-<center><h1>404 Hata Sayfası</h1></center>
 
+<div id="container">
+    <table>
+        <caption>Non-Regular Verb</caption>
+        <thead>
+        <tr>
+            <th scope="col">Verb</th>
+            <th scope="col">Verb 2</th>
+            <th scope="col">Verb 3</th>
+            <th scope="col">Translate</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-label="Verb"><?php echo $_SESSION['ir_verb1'];?></td>
+            <td data-label="Verb 2"><?php echo $_SESSION['ir_verb2'];?></td>
+            <td data-label="Verb 3"><?php echo $_SESSION['ir_verb3'];?></td>
+            <td data-label="Translate"><?php echo $_SESSION['ir_translate'];?></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
 
+<div id="container">
+    <table>
+        <caption>Non-Regular Verb Example</caption>
+        <thead>
+        <tr>
+            <th scope="col">Example</th>
+            <th scope="col">Example Translate</th>
 
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-label="Example"><?php echo $_SESSION['ir_ex1'];?></td>
+            <td data-label="Example Translate"><?php echo $_SESSION['ir_ex1t'];?></td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr>
+            <td data-label="Example"><?php echo $_SESSION['ir_ex2'];?></td>
+            <td data-label="Example Translate"><?php echo $_SESSION['ir_ex2t'];?></td>
+        </tr>
+        </tbody>
+        <tbody>
+        <tr>
+            <td data-label="Example"><?php echo $_SESSION['ir_ex3'];?></td>
+            <td data-label="Example Translate"><?php echo $_SESSION['ir_ex3t'];?></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div id="container">
+    <form action="rnd_irregular_verb.php" method="post" enctype="multipart/form-data">
+        <input type="submit" name="gonder" id="refresh" value="">
+    </form>
+</div>
 </body>
 </html>

@@ -1,0 +1,53 @@
+#container{
+    display:flex;
+    justify-content:center;
+    padding:15px;
+}
+#table{
+    width: 60%;
+    font: bold 1.25em "Lucida Console", Verdana, Arial, Helvetica, sans-serif;
+    border: 5px solid #34495e;
+    padding: 3px 3px 3px 6px;
+}
+
+#red{
+    color: #e74c3c;
+    text-align: right;
+    width: 20%;
+}
+#black{
+    text-align: left;
+    width: 77%;
+}
+#verb{
+    text-align: left;
+    width: 20%;
+}
+#butonimg{
+    width: 20%;
+}
+@media screen and (max-width: 800px) {
+    #table{
+        width: 100%;
+        font: bold 1.25em "Lucida Console", Verdana, Arial, Helvetica, sans-serif;
+        border: 5px solid #34495e;
+        padding: 3px 3px 3px 6px;
+    }
+
+    #red{
+        color: #e74c3c;
+        text-align: right;
+        width: 20%;
+    }
+    #black{
+        text-align: left;
+        width: 77%;
+    }
+    #verb{
+        text-align: left;
+        width: 20%;
+    }
+    #butonimg{
+        width: 20%;
+    }
+}

@@ -60,8 +60,8 @@ session_start();
                     <li>
                         <a href="#">Technology Technical </a>
                         <ul class="sub-sub">
-                            <li><a href="../tech-Technical/rnd_tech_word.php">Words</a></li>
-                            <li><a href="../tech-Technical/rnd_tech_paragraph.php">Paragraph</a></li>
+                            <li><a href="rnd_tech_word.php">Words</a></li>
+                            <li><a href="rnd_tech_paragraph.php">Paragraph</a></li>
                         </ul>
                     </li>
                     <li>
@@ -122,9 +122,63 @@ session_start();
         <div id="nav-toggle-alt" onclick="toggle()">X</div>
     </nav>
 </header>
-<center><h1>404 Hata Sayfası</h1></center>
+<div id="container">
+    <table id="table">
+        <form action="control_tech_word.php" method="post" enctype="multipart/form-data">
+            <tr>
+                <td id="tanım">Word Control :</td>
+                <td id="tanım2"><input type="text" name="word"></td>
+                <td id="tanım3"><input type="submit" name="gonder" id="refresh" value=""></td>
+                <td id="tanım4">
+                    <?php
+                    if($_SESSION['controlword'] =="ok"):
+                        echo "<img src='../image/onay.png'>";
+                    else:
+                        echo "<img src='../image/hata.png'>";
+                    endif;
+                    ?>
+                </td>
+            </tr>
+        </form>
+    </table>
+</div>
+<form action="add_tech_word.php" method="post" enctype="multipart/form-data">
+<div id="container">
+    <table id="table4">
+        <tr>
+            <td id="tanım">Word :</td>
+            <td id="tanım5"><input type="text" name="word" placeholder="Kelimeyi yazınız..."></td>
+
+            <td rowspan="2" id="tanım6">
+                <?php
+                if($_SESSION['addword'] =="ok"):
+                    echo "<img src='../image/onay.png'>";
+                else:
+                    echo "<img src='../image/hata.png'>";
+                endif;
+                ?>
+            </td>
+        </tr>
+        <tr>
+            <td id="tanım">Translate :</td>
+            <td id="tanım5"><input type="text" name="translate" placeholder="Çevirisini yazınız..."></td>
+
+        </tr>
+        <tr>
+            <td id="tanım8">Example :</td>
+            <td id="tanım7"><input type="text" name="ex1" placeholder="Örnek yazınız..."></td>
+            <td rowspan="2" id="tanım6">
+                <input type="submit" name="gonder" id="add" value="">
+            </td>
+        </tr>
+        <tr>
+            <td id="tanım8">Example Translate :</td>
+            <td id="tanım7"><input type="text" name="ex1t" placeholder="Örnek çevirisini yazınız..."></td>
+        </tr>
+    </table>
+</div>
 
 
-
+</form>
 </body>
 </html>

@@ -67,9 +67,9 @@ session_start();
                     <li>
                         <a href="#">Every Day</a>
                         <ul class="sub-sub">
-                            <li><a href="../everyDay/rnd_everyday_word.php">Words</a></li>
-                            <li><a href="../everyDay/rnd_everyday_dialog.php">Dialogue</a></li>
-                            <li><a href="../everyDay/rnd_everyday_paragraph.php">Paragraph</a></li>
+                            <li><a href="rnd_everyday_word.php">Words</a></li>
+                            <li><a href="rnd_everyday_dialog.php">Dialogue</a></li>
+                            <li><a href="rnd_everyday_paragraph.php">Paragraph</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -122,9 +122,42 @@ session_start();
         <div id="nav-toggle-alt" onclick="toggle()">X</div>
     </nav>
 </header>
-<center><h1>404 Hata Sayfası</h1></center>
 
+<div id="container">
+    <table id="table">
+        <tr>
+            <td id="tanım">Word :</td>
+            <td id="tanım5"><?php echo $_SESSION['everyday_word'];?></td>
+            <td rowspan="2" id="tanım3">
+                <form action="rnd_everyday_word.php" method="post" enctype="multipart/form-data">
+                    <input type="submit" name="gonder" id="refresh" value="">
+                </form>
+            </td>
+            <td rowspan="2" id="tanım4">
+                <a href="everyDayWordAdd.php">
+                    <img src="../image/add.png">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td id="tanım">Translate :</td>
+            <td id="tanım5"><?php echo $_SESSION['everyday_translate'];?></td>
 
+        </tr>
+    </table>
+</div>
+<div id="container">
+    <table id="table2">
+        <tr>
+            <td id="tanım8">Example :</td>
+            <td id="tanım7"><?php echo $_SESSION['everyday_ex1'];?></td>
+        </tr>
+        <tr>
+            <td id="tanım8">Example Translate :</td>
+            <td id="tanım7"><?php echo $_SESSION['everyday_ex1t'];?></td>
+        </tr>
+    </table>
+</div>
 
 </body>
 </html>

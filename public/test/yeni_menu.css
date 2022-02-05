@@ -1,4 +1,7 @@
-
+/**
+ * @author Sinan Tekmil
+ * @copyright 2014 http://www.veblebi.com
+ */
 
 body {
     margin:0;
@@ -20,7 +23,7 @@ nav a {
 }
 nav>ul>li>a {
     padding: 20px;
-    width: 70px;
+    width: 80px;
 }
 nav>ul {
     list-style: none;
