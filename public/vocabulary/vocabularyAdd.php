@@ -5,8 +5,8 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Adjectives</title>
-    <link rel="stylesheet" href="../css/table.css">
+    <title>Vocabulary Add</title>
+    <link rel="stylesheet" href="../css/responsive_table.css">
     <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/image.css">
@@ -123,15 +123,22 @@ session_start();
     </nav>
 </header>
 
-
 <div id="container">
-    <table id="table">
+    <table>
         <form action="control_vocabulary.php" method="post" enctype="multipart/form-data">
+            <caption>Vocabulary Control</caption>
+            <thead>
             <tr>
-                <td id="tanım">Vocabulary Control :</td>
-                <td id="tanım2"><input type="text" name="vocabulary"></td>
-                <td id="tanım3"><input type="submit" name="gonder" id="refresh" value=""></td>
-                <td id="tanım4">
+                <th scope="col">Vocabulary</th>
+                <th scope="col">Control</th>
+                <th scope="col">Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-label="Vocabulary"><input type="text" name="vocabulary"></td>
+                <td data-label="Control"><input type="submit" name="gonder" id="refresh" value=""></td>
+                <td data-label="Translate">
                     <?php
                     if($_SESSION['controlvocabulary'] =="var"):
                         echo "<img src='../image/onay.png'>";
@@ -141,46 +148,57 @@ session_start();
                     ?>
                 </td>
             </tr>
+            </tbody>
         </form>
     </table>
 </div>
-<form action="add_vocabulary.php" method="post" enctype="multipart/form-data">
+
 <div id="container">
-    <table id="table4">
-        <tr>
-            <td id="tanım">Vocabulary :</td>
-            <td id="tanım5"><input type="text" name="vocabulary" placeholder="Kelimeyi yazınız..."></td>
+    <table>
+        <form action="add_vocabulary.php" method="post" enctype="multipart/form-data">
+            <caption>Vocabulary Add</caption>
+            <thead>
+            <tr>
+                <th scope="col">Vocabulary</th>
+                <th scope="col">Translate</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-label="Vocabulary"><input type="text" name="vocabulary" placeholder="Kelimeyi yazınız..."></td>
+                <td data-label="Translate"><input type="text" name="translate" placeholder="Çevirisini yazınız..."></td>
 
-            <td rowspan="2" id="tanım6">
-                <?php
-                if($_SESSION['addVocabulary'] =="ok"):
-                    echo "<img src='../image/onay.png'>";
-                else:
-                    echo "<img src='../image/hata.png'>";
-                endif;
-                ?>
-            </td>
-        </tr>
-        <tr>
-            <td id="tanım">Translate :</td>
-            <td id="tanım5"><input type="text" name="translate" placeholder="Çevirisini yazınız..."></td>
+            </tr>
+            <thead>
+            <tr>
+                <th scope="col">Example</th>
+                <th scope="col">Example Translate</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-label="Example"><input type="text" name="ex1" placeholder="Örnek 1"></td>
+                <td data-label="Example Translate"><input type="text" name="ex1t" placeholder="Örnek 1 Çevirisi"></td>
+            </tr>
 
-        </tr>
-        <tr>
-            <td id="tanım8">Example :</td>
-            <td id="tanım7"><input type="text" name="ex1" placeholder="Örnek yazınız..."></td>
-            <td rowspan="2" id="tanım6">
-                <input type="submit" name="gonder" id="add" value="">
-            </td>
-        </tr>
-        <tr>
-            <td id="tanım8">Example Translate :</td>
-            <td id="tanım7"><input type="text" name="ex1t" placeholder="Örnek çevirisini yazınız..."></td>
-        </tr>
+
+            <tr>
+                <td data-label="Example">
+                    <?php
+                    if($_SESSION['addVocabulary'] =="ok"):
+                        echo "<img src='../image/onay.png'>";
+                    else:
+                        echo "<img src='../image/hata.png'>";
+                    endif;
+                    ?>
+                </td>
+                <td data-label="Example Translate"><input type="submit" name="gonder" id="add" value=""></td>
+            </tr>
+            </tbody>
+        </form>
     </table>
 </div>
 
 
-</form>
 </body>
 </html>

@@ -5,8 +5,9 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Adjectives</title>
+    <title>Vocabulary</title>
     <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/responsive_table.css">
     <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/image.css">
@@ -124,40 +125,47 @@ session_start();
 </header>
 
 <div id="container">
-    <table id="table">
+    <table>
+        <caption>Vocabulary Verb</caption>
+        <thead>
         <tr>
-            <td id="tanım">Vocabulary :</td>
-            <td id="tanım5"><?php echo $_SESSION['voca_word'];?></td>
-            <td rowspan="2" id="tanım3">
-                <form action="rnd_vocabulary.php" method="post" enctype="multipart/form-data">
-                    <input type="submit" name="gonder" id="refresh" value="">
-                </form>
-            </td>
-            <td rowspan="2" id="tanım4">
-                <a href="vocabularyAdd.php">
-                    <img src="../image/add.png">
-                </a>
-            </td>
+            <th scope="col">Vocabulary</th>
+            <th scope="col">Translate</th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
-            <td id="tanım">Translate :</td>
-            <td id="tanım5"><?php echo $_SESSION['voca_translate'];?></td>
-
+            <td data-label="Vocabulary"><?php echo $_SESSION['voca_word'];?></td>
+            <td data-label="Translate"><?php echo $_SESSION['voca_translate'];?></td>
         </tr>
+        </tbody>
     </table>
 </div>
 <div id="container">
-    <table id="table2">
+    <table>
+        <caption>Vocabulary Example</caption>
+        <thead>
         <tr>
-            <td id="tanım8">Example :</td>
-            <td id="tanım7"><?php echo $_SESSION['voca_ex1'];?></td>
+            <th scope="col">Example</th>
+            <th scope="col">Example Translate</th>
+
         </tr>
+        </thead>
+        <tbody>
         <tr>
-            <td id="tanım8">Example Translate :</td>
-            <td id="tanım7"><?php echo $_SESSION['voca_ex1t'];?></td>
+            <td data-label="Example"><?php echo $_SESSION['voca_ex1'];?></td>
+            <td data-label="Example Translate"><?php echo $_SESSION['voca_ex1t'];?></td>
         </tr>
+        </tbody>
+
     </table>
 </div>
+<div id="container">
+    <form action="rnd_vocabulary.php" method="post" enctype="multipart/form-data">
+        <input type="submit" name="gonder" id="refresh" value="">
+    </form>
+</div>
+
 
 </body>
 </html>
