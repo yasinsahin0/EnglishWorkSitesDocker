@@ -135,8 +135,6 @@ session_start();
             <tbody>
                 <tr>
                     <td data-label="Option" colspan="2"><?php echo $_SESSION['game_reg_verb'];?></td>
-
-
                 </tr>
                 <form action="control_game_regular.php" method="post" enctype="multipart/form-data">
                 <tr>
@@ -159,7 +157,7 @@ session_start();
                 <tr>
                     <td data-label="Option" id="sag">C )</td>
                     <td data-label="Ques / Answer" id="sol">
-                        <input type="radio" id="gameradio" name="secenek" value="<?php echo $_SESSION['game_reg_2'] ?>">
+                        <input type="radio" id="gameradio" name="secenek" value="<?php echo $_SESSION['game_reg_3'] ?>">
                         <label for="huey"><?php echo $_SESSION['game_reg_3'] ?></label>
                     </td>
 
@@ -167,7 +165,7 @@ session_start();
                 <tr>
                     <td data-label="Option" id="sag">D )</td>
                     <td data-label="Ques / Answer" id="sol">
-                        <input type="radio" id="gameradio" name="secenek" value="<?php echo $_SESSION['game_reg_2'] ?>">
+                        <input type="radio" id="gameradio" name="secenek" value="<?php echo $_SESSION['game_reg_4'] ?>">
                         <label for="huey"><?php echo $_SESSION['game_reg_4'] ?></label>
                     </td>
 

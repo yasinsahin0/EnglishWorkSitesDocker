@@ -122,7 +122,9 @@ session_start();
         <div id="nav-toggle-alt" onclick="toggle()">X</div>
     </nav>
 </header>
-
+<form action="exit.php" method="post" enctype="multipart/form-data">
+    <input type="submit" name="gonder" id="refresh" value="">
+</form>
 
 
 
