@@ -5,8 +5,8 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Every Day Word</title>
-    <link rel="stylesheet" href="../css/table.css">
+    <title>Nouns Add</title>
+    <link rel="stylesheet" href="../css/responsive_table.css">
     <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/image.css">
@@ -40,7 +40,7 @@ session_start();
                     <li>
                         <a href="#">Adjectives</a>
                         <ul class="sub-sub">
-                            <li><a href="../adjectives/adjectives.php">Adjectives</a></li>
+                            <li><a href="../adjectives/rnd_adjectives.php">Adjectives</a></li>
                             <li><a href="../adjectives/adjectivesAdd.php">Add Adjectives</a></li>
                         </ul>
                     </li>
@@ -122,5 +122,81 @@ session_start();
         <div id="nav-toggle-alt" onclick="toggle()">X</div>
     </nav>
 </header>
+
+<div id="container">
+    <table>
+        <form action="control_nouns.php" method="post" enctype="multipart/form-data">
+            <caption>Nouns Control</caption>
+            <thead>
+            <tr>
+                <th scope="col">Nouns</th>
+                <th scope="col">Control</th>
+                <th scope="col">Status</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-label="Nouns"><input type="text" name="nouns"></td>
+                <td data-label="Control"><input type="submit" name="gonder" id="refresh" value=""></td>
+                <td data-label="Translate">
+                    <?php
+                    if($_SESSION['control_nouns'] =="var"):
+                        echo "<img src='../image/onay.png'>";
+                    else:
+                        echo "<img src='../image/hata.png'>";
+                    endif;
+                    ?>
+                </td>
+            </tr>
+            </tbody>
+        </form>
+    </table>
+</div>
+
+<div id="container">
+    <table>
+        <form action="add_nouns.php" method="post" enctype="multipart/form-data">
+            <caption>Nouns Add</caption>
+            <thead>
+            <tr>
+                <th scope="col">Nouns</th>
+                <th scope="col">Translate</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-label="Nouns"><input type="text" name="nouns" placeholder="Kelimeyi yazınız..."></td>
+                <td data-label="Translate"><input type="text" name="translate" placeholder="Çevirisini yazınız..."></td>
+
+            </tr>
+            <thead>
+            <tr>
+                <th scope="col">Example</th>
+                <th scope="col">Example Translate</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-label="Example"><input type="text" name="ex1" placeholder="Örnek 1"></td>
+                <td data-label="Example Translate"><input type="text" name="ex1t" placeholder="Örnek 1 Çevirisi"></td>
+            </tr>
+
+
+            <tr>
+                <td data-label="Example">
+                    <?php
+                    if($_SESSION['addNouns'] =="ok"):
+                        echo "<img src='../image/onay.png'>";
+                    else:
+                        echo "<img src='../image/hata.png'>";
+                    endif;
+                    ?>
+                </td>
+                <td data-label="Example Translate"><input type="submit" name="gonder" id="add" value=""></td>
+            </tr>
+            </tbody>
+        </form>
+    </table>
+</div>
 </body>
 </html>

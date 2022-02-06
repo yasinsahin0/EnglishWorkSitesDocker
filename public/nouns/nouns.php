@@ -5,8 +5,8 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Every Day Word</title>
-    <link rel="stylesheet" href="../css/table.css">
+    <title>Nouns</title>
+    <link rel="stylesheet" href="../css/responsive_table.css">
     <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/image.css">
@@ -40,7 +40,7 @@ session_start();
                     <li>
                         <a href="#">Adjectives</a>
                         <ul class="sub-sub">
-                            <li><a href="../adjectives/adjectives.php">Adjectives</a></li>
+                            <li><a href="../adjectives/rnd_adjectives.php">Adjectives</a></li>
                             <li><a href="../adjectives/adjectivesAdd.php">Add Adjectives</a></li>
                         </ul>
                     </li>
@@ -122,5 +122,47 @@ session_start();
         <div id="nav-toggle-alt" onclick="toggle()">X</div>
     </nav>
 </header>
+<div id="container">
+    <table>
+        <caption>Nouns</caption>
+        <thead>
+        <tr>
+            <th scope="col">Nouns</th>
+            <th scope="col">Translate</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-label="Nouns"><?php echo $_SESSION['noun_word'];?></td>
+            <td data-label="Translate"><?php echo $_SESSION['noun_translate'];?></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div id="container">
+    <table>
+        <caption>Nouns Example</caption>
+        <thead>
+        <tr>
+            <th scope="col">Example</th>
+            <th scope="col">Example Translate</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td data-label="Example"><?php echo $_SESSION['noun_ex1'];?></td>
+            <td data-label="Example Translate"><?php echo $_SESSION['noun_ex1t'];?></td>
+        </tr>
+        </tbody>
+
+    </table>
+</div>
+<div id="container">
+    <form action="rnd_nouns.php" method="post" enctype="multipart/form-data">
+        <input type="submit" name="gonder" id="refresh" value="">
+    </form>
+</div>
+
 </body>
 </html>

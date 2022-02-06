@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <title>Adjectives</title>
-    <link rel="stylesheet" href="../css/table.css">
+    <link rel="stylesheet" href="../css/responsive_table.css">
     <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/image.css">
@@ -40,7 +40,7 @@ session_start();
                     <li>
                         <a href="#">Adjectives</a>
                         <ul class="sub-sub">
-                            <li><a href="adjectives.php">Adjectives</a></li>
+                            <li><a href="rnd_adjectives.php">Adjectives</a></li>
                             <li><a href="adjectivesAdd.php">Add Adjectives</a></li>
                         </ul>
                     </li>
@@ -122,42 +122,48 @@ session_start();
         <div id="nav-toggle-alt" onclick="toggle()">X</div>
     </nav>
 </header>
-
 <div id="container">
-    <table id="table">
+    <table>
+        <caption>Vocabulary Verb</caption>
+        <thead>
         <tr>
-            <td id="tanım">Adjectives :</td>
-            <td id="tanım5"><?php echo $_SESSION['adj_word'];?></td>
-            <td rowspan="2" id="tanım3">
-                <form action="rnd_adjectives.php" method="post" enctype="multipart/form-data">
-                    <input type="submit" name="gonder" id="refresh" value="">
-                </form>
-            </td>
-            <td rowspan="2" id="tanım4">
-                <a href="adjectivesAdd.php">
-                    <img src="../image/add.png">
-                </a>
-            </td>
+            <th scope="col">Adjectives</th>
+            <th scope="col">Translate</th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
-            <td id="tanım">Translate :</td>
-            <td id="tanım5"><?php echo $_SESSION['adj_translate'];?></td>
-
+            <td data-label="Adjectives"><?php echo $_SESSION['adj_word'];?></td>
+            <td data-label="Translate"><?php echo $_SESSION['adj_translate'];?></td>
         </tr>
+        </tbody>
     </table>
 </div>
 <div id="container">
-    <table id="table2">
+    <table>
+        <caption>Vocabulary Example</caption>
+        <thead>
         <tr>
-            <td id="tanım8">Example :</td>
-            <td id="tanım7"><?php echo $_SESSION['adj_ex1'];?></td>
+            <th scope="col">Example</th>
+            <th scope="col">Example Translate</th>
+
         </tr>
+        </thead>
+        <tbody>
         <tr>
-            <td id="tanım8">Example Translate :</td>
-            <td id="tanım7"><?php echo $_SESSION['adj_ex1t'];?></td>
+            <td data-label="Example"><?php echo $_SESSION['adj_ex1'];?></td>
+            <td data-label="Example Translate"><?php echo $_SESSION['adj_ex1t'];?></td>
         </tr>
+        </tbody>
+
     </table>
 </div>
+<div id="container">
+    <form action="rnd_adjectives.php" method="post" enctype="multipart/form-data">
+        <input type="submit" name="gonder" id="refresh" value="">
+    </form>
+</div>
+
 
 </body>
 </html>

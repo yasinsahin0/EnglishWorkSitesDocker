@@ -41,7 +41,7 @@ session_start();
                     <li>
                         <a href="#">Adjectives</a>
                         <ul class="sub-sub">
-                            <li><a href="../adjectives/adjectives.php">Adjectives</a></li>
+                            <li><a href="../adjectives/rnd_adjectives.php">Adjectives</a></li>
                             <li><a href="../adjectives/adjectivesAdd.php">Add Adjectives</a></li>
                         </ul>
                     </li>
