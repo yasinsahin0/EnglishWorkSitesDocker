@@ -25,8 +25,8 @@ session_start();
                     <li>
                         <a href="#">Nouns</a>
                         <ul class="sub-sub">
-                            <li><a href="../nouns/nouns.php">Nouns</a></li>
-                            <li><a href="../nouns/rnd_nouns.php">Add Nouns</a></li>
+                            <li><a href="../nouns/rnd_nouns.php">Nouns</a></li>
+                            <li><a href="../nouns/nounsAdd.php">Add Nouns</a></li>
                         </ul>
                     </li>
                     <li>

@@ -5,7 +5,7 @@ session_start();
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Every Day Word</title>
+    <title>Future Perfect Tense</title>
     <link rel="stylesheet" href="../css/table.css">
     <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/menu.css">
@@ -25,8 +25,8 @@ session_start();
                     <li>
                         <a href="#">Nouns</a>
                         <ul class="sub-sub">
-                            <li><a href="../nouns/nouns.php">Nouns</a></li>
-                            <li><a href="../nouns/rnd_nouns.php">Add Nouns</a></li>
+                            <li><a href="../nouns/rnd_nouns.php">Nouns</a></li>
+                            <li><a href="../nouns/nounsAdd.php">Add Nouns</a></li>
                         </ul>
                     </li>
                     <li>
@@ -62,6 +62,7 @@ session_start();
                         <ul class="sub-sub">
                             <li><a href="../tech-Technical/rnd_tech_word.php">Words</a></li>
                             <li><a href="../tech-Technical/rnd_tech_paragraph.php">Paragraph</a></li>
+                            <li><a href="../tech-Technical/techWordAdd.php">Add Words</a></li>
                         </ul>
                     </li>
                     <li>
